@@ -1,7 +1,10 @@
 
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useConfiguration } from "@/hooks/useConfiguration";
 
 const ContactInfoCard = () => {
+  const { data: config } = useConfiguration();
+
   return (
     <div className="space-y-8 animate-fade-in-up">
       <div>
@@ -20,7 +23,7 @@ const ContactInfoCard = () => {
           </div>
           <div>
             <div className="font-semibold text-gray-900">Teléfono</div>
-            <div className="text-gray-600">(787) 555-0123</div>
+            <div className="text-gray-600">{config?.empresa_telefono || "(787) 555-0123"}</div>
           </div>
         </div>
 
@@ -30,7 +33,7 @@ const ContactInfoCard = () => {
           </div>
           <div>
             <div className="font-semibold text-gray-900">Email</div>
-            <div className="text-gray-600">info@kilowattpr.com</div>
+            <div className="text-gray-600">{config?.empresa_email || "info@kilowattpr.com"}</div>
           </div>
         </div>
 
@@ -40,7 +43,7 @@ const ContactInfoCard = () => {
           </div>
           <div>
             <div className="font-semibold text-gray-900">Oficina principal</div>
-            <div className="text-gray-600">123 Calle Solar, San Juan, PR 00926</div>
+            <div className="text-gray-600">{config?.empresa_direccion || "123 Calle Solar, San Juan, PR 00926"}</div>
           </div>
         </div>
 

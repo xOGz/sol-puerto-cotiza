@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
+import { useLeadSubmission } from "@/hooks/useLeadSubmission";
 
 const LeadCaptureForm = () => {
   const [formData, setFormData] = useState({
@@ -12,8 +12,7 @@ const LeadCaptureForm = () => {
     municipio: "",
     consumo: ""
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
+  const { submitLead, isSubmitting } = useLeadSubmission();
 
   const municipios = [
     "San Juan", "Bayamón", "Carolina", "Ponce", "Caguas", "Guaynabo", "Arecibo", 
@@ -23,35 +22,17 @@ const LeadCaptureForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log("Form submitted:", formData);
-      
-      toast({
-        title: "¡Solicitud enviada!",
-        description: "Te contactaremos en menos de 24 horas con tu cotización personalizada.",
-      });
-
-      // Reset form
+    
+    const result = await submitLead(formData);
+    
+    if (result.success) {
+      // Reset form on success
       setFormData({
         nombre: "",
         telefono: "",
         municipio: "",
         consumo: ""
       });
-
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Hubo un problema al enviar tu solicitud. Por favor intenta de nuevo.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
