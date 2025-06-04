@@ -239,7 +239,7 @@ const Contact = () => {
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Oficina principal</h3>
+                      <h3 className="font-semibold text-gray-900 mb-1">Correo o dirección postal</h3>
                       <p className="text-gray-600">
                         123 Calle Solar<br />
                         San Juan, PR 00926
