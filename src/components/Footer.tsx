@@ -42,7 +42,6 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sistemas con batería</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Monitoreo solar</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Mantenimiento</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Financiamiento</a></li>
             </ul>
           </div>
 
@@ -64,17 +63,17 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-kilowatt-primary" />
-                <span className="text-gray-400">(787) 555-0123</span>
+                <span className="text-gray-400">(787) 431-2275</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-kilowatt-primary" />
-                <span className="text-gray-400">info@kilowattpr.com</span>
+                <span className="text-gray-400">kilowattpr@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-kilowatt-primary mt-1" />
                 <span className="text-gray-400">
-                  123 Calle Solar<br />
-                  San Juan, PR 00926
+                  HC 3 Box 31767<br />
+                  Aguada, PR 00602
                 </span>
               </div>
             </div>
