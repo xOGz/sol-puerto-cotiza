@@ -1,4 +1,3 @@
-
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,11 +13,10 @@ const PricingSection = () => {
         "Inversor híbrido",
         "Monitoreo avanzado",
         "Garantía 25 años en placas",
-        "Garantía 10 años en tienda PR",
-        "Instalación incluida",
+        "Garantía 10 años inversor en tienda PR",
         "Permisos LUMA"
       ],
-      returnInfo: "Retorno de inversión: 6-8 años",
+      returnInfo: "Retorno de inversión: 4-6 años",
       ideal: "Ideal para hogares pequeños"
     },
     {
@@ -32,12 +30,11 @@ const PricingSection = () => {
         "Inversor híbrido",
         "Monitoreo avanzado",
         "Garantía 25 años en placas",
-        "Garantía 10 años en tienda PR",
-        "Instalación incluida",
+        "Garantía 10 años inversor y batería en tienda PR",
         "Permisos LUMA",
         "Respaldo en apagones"
       ],
-      returnInfo: "Retorno de inversión: 7-9 años",
+      returnInfo: "Retorno de inversión: 5-7 años",
       ideal: "Ideal para familias promedio"
     },
     {
@@ -51,12 +48,10 @@ const PricingSection = () => {
         "Inversor híbrido",
         "Monitoreo avanzado",
         "Garantía 25 años en placas",
-        "Garantía 10 años en tienda PR",
-        "Instalación premium",
-        "2 mantenimientos limpieza gratis",
-        "Mantenimiento incluido"
+        "Garantía 10 años inversor y batería en tienda PR",
+        "2 mantenimientos limpieza gratis"
       ],
-      returnInfo: "Retorno de inversión: 8-10 años",
+      returnInfo: "Retorno de inversión: 6-8 años",
       ideal: "Ideal para casas grandes"
     }
   ];
