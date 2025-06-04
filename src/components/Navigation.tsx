@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -44,9 +44,11 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-solar-500 to-ocean-500 rounded-lg flex items-center justify-center">
-                <Sun className="w-5 h-5 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/35a5cb3f-1dc6-4637-a191-795956768438.png" 
+                alt="Kilowatt PR Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-xl font-bold text-gray-900">Kilowatt PR</span>
             </div>
 
@@ -56,14 +58,14 @@ const Navigation = () => {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-solar-500 transition-colors font-medium"
+                  className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
                 >
                   {item.label}
                 </button>
               ))}
               <Button 
                 onClick={() => scrollToSection('#cotizacion')}
-                className="bg-gradient-to-r from-solar-500 to-solar-600 hover:from-solar-600 hover:to-solar-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 animate-glow"
+                className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-secondary hover:to-kilowatt-primary text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 animate-glow"
               >
                 Cotización Gratis
               </Button>
@@ -95,14 +97,14 @@ const Navigation = () => {
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left text-lg font-medium text-gray-700 hover:text-solar-500 transition-colors"
+                    className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
                   >
                     {item.label}
                   </button>
                 ))}
                 <Button 
                   onClick={() => scrollToSection('#cotizacion')}
-                  className="w-full bg-gradient-to-r from-solar-500 to-solar-600 hover:from-solar-600 hover:to-solar-700 text-white py-3 rounded-full font-medium"
+                  className="w-full bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-secondary hover:to-kilowatt-primary text-white py-3 rounded-full font-medium"
                 >
                   Cotización Gratis
                 </Button>

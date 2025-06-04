@@ -1,5 +1,5 @@
 
-import { Sun, Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -10,9 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-solar-500 to-ocean-500 rounded-lg flex items-center justify-center">
-                <Sun className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/35a5cb3f-1dc6-4637-a191-795956768438.png" 
+                alt="Kilowatt PR Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-2xl font-bold">Kilowatt PR</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
@@ -20,13 +22,13 @@ const Footer = () => {
               Hacemos la energía solar accesible para todas las familias puertorriqueñas.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-solar-500 transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-kilowatt-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-solar-500 transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-kilowatt-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-solar-500 transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-kilowatt-primary transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -61,15 +63,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Contacto</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-solar-500" />
+                <Phone className="w-5 h-5 text-kilowatt-primary" />
                 <span className="text-gray-400">(787) 555-0123</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-solar-500" />
+                <Mail className="w-5 h-5 text-kilowatt-primary" />
                 <span className="text-gray-400">info@kilowattpr.com</span>
               </div>
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-solar-500 mt-1" />
+                <MapPin className="w-5 h-5 text-kilowatt-primary mt-1" />
                 <span className="text-gray-400">
                   123 Calle Solar<br />
                   San Juan, PR 00926

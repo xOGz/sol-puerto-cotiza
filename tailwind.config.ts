@@ -66,6 +66,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				// Kilowatt PR Brand Colors
+				'kilowatt-primary': 'hsl(var(--kilowatt-primary))',
+				'kilowatt-secondary': 'hsl(var(--kilowatt-secondary))',
+				'kilowatt-accent': 'hsl(var(--kilowatt-accent))',
+				'kilowatt-gold': 'hsl(var(--kilowatt-gold))',
+				'kilowatt-blue': 'hsl(var(--kilowatt-blue))',
+				// Legacy solar/ocean colors for backward compatibility
 				solar: {
 					50: '#fefce8',
 					100: '#fef3c7',
@@ -125,10 +132,10 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(249, 115, 22, 0.3)'
+						boxShadow: '0 0 20px rgba(251, 191, 36, 0.3)'
 					},
 					'50%': {
-						boxShadow: '0 0 30px rgba(249, 115, 22, 0.5)'
+						boxShadow: '0 0 30px rgba(251, 191, 36, 0.5)'
 					}
 				},
 				'float': {

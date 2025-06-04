@@ -37,12 +37,12 @@ const HeroSection = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block">Placas Solares</span>
-            <span className="block text-gradient">en Puerto Rico</span>
+            <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">en Puerto Rico</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Reduce tu factura hasta <span className="font-bold text-solar-400">90%</span> con energía solar confiable y garantizada.
+            Reduce tu factura hasta <span className="font-bold text-kilowatt-accent">90%</span> con energía solar confiable y garantizada.
           </p>
 
           {/* CTAs */}
@@ -50,7 +50,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToQuote}
               size="lg"
-              className="bg-gradient-to-r from-solar-500 to-solar-600 hover:from-solar-600 hover:to-solar-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 animate-glow"
+              className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-secondary hover:to-kilowatt-primary text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 animate-glow"
             >
               Obtén tu cotización gratis
             </Button>
