@@ -115,11 +115,11 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center animate-fade-in-up">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face" 
-                alt="José Rivera - CEO"
+                src="https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?w=300&h=300&fit=crop&crop=face" 
+                alt="Xavier Acevedo - CEO"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">José Rivera</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Xavier Acevedo</h3>
               <p className="text-solar-600 font-medium mb-2">Fundador y CEO</p>
               <p className="text-gray-600 text-sm">
                 15 años de experiencia en energía renovable y gestión empresarial

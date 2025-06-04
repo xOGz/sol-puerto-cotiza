@@ -67,11 +67,11 @@ const CompanyMission = () => {
             <div className="max-w-2xl mx-auto">
               <div className="mb-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face" 
+                  src="https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?w=100&h=100&fit=crop&crop=face" 
                   alt="CEO Kilowatt PR"
                   className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h4 className="text-lg font-semibold text-gray-900">José Rivera</h4>
+                <h4 className="text-lg font-semibold text-gray-900">Xavier Acevedo</h4>
                 <p className="text-gray-600">Fundador y CEO</p>
               </div>
               
