@@ -32,10 +32,6 @@ const FAQSection = () => {
       answer: "El proceso completo toma 4-6 semanas desde la evaluación inicial hasta que el sistema está funcionando. La instalación física en tu techo toma 1-2 días, pero los permisos y conexiones con LUMA pueden tomar varias semanas."
     },
     {
-      question: "¿Ofrecen financiamiento?",
-      answer: "Sí, ofrecemos múltiples opciones de financiamiento incluyendo préstamos solares con 0% de interés inicial, préstamos a largo plazo con pagos mensuales bajos, y opciones de leasing. La mayoría de nuestros clientes pagan menos por el sistema de lo que ahorraban en electricidad."
-    },
-    {
       question: "¿Necesito mantenimiento de los paneles?",
       answer: "Los paneles solares requieren muy poco mantenimiento. Recomendamos limpiarlos 2-3 veces al año y una inspección anual. Ofrecemos planes de mantenimiento opcionales y monitoreo remoto para asegurar que tu sistema funcione óptimamente."
     }
