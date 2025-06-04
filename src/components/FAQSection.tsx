@@ -17,7 +17,7 @@ const FAQSection = () => {
     },
     {
       question: "¿Cuál es la garantía de los paneles solares?",
-      answer: "Ofrecemos 25 años de garantía en los paneles solares y 10 años en inversores. También incluimos 5 años de garantía en mano de obra y instalación. Los paneles solares están diseñados para durar más de 30 años con mínima degradación."
+      answer: "Ofrecemos 25 años de garantía en los paneles solares y 10 años en inversores. También incluimos 30 días de garantía en mano de obra y instalación. Los paneles solares están diseñados para durar más de 30 años con mínima degradación."
     },
     {
       question: "¿Funcionan los paneles en días nublados?",
