@@ -1,3 +1,4 @@
+
 import {
   Accordion,
   AccordionContent,
@@ -80,13 +81,13 @@ const FAQSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+17875550123" 
-                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-solar-500 to-solar-600 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300"
+                href="tel:+17874312275" 
+                className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300"
               >
                 Llamar ahora
               </a>
               <a 
-                href="https://wa.me/17875550123" 
+                href="https://wa.me/17874312275" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300"
