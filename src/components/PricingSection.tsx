@@ -10,50 +10,53 @@ const PricingSection = () => {
       price: "Desde $8,500",
       popular: false,
       features: [
-        "4-6 paneles solares",
-        "Inversor de cadena",
-        "Monitoreo básico",
-        "Garantía 25 años",
+        "6-8 paneles solares",
+        "Inversor híbrido",
+        "Monitoreo avanzado",
+        "Garantía 25 años en placas",
+        "Garantía 10 años en tienda PR",
         "Instalación incluida",
         "Permisos LUMA"
       ],
-      savings: "Ahorro: 40-60%",
+      returnInfo: "Retorno de inversión: 6-8 años",
       ideal: "Ideal para hogares pequeños"
     },
     {
       name: "Completo",
-      subtitle: "Con batería",
+      subtitle: "Con batería de litio",
       price: "Desde $15,800",
       popular: true,
       features: [
         "8-12 paneles solares",
-        "Batería de respaldo",
+        "Batería de litio con 10 años garantía",
         "Inversor híbrido",
         "Monitoreo avanzado",
-        "Garantía 25 años",
+        "Garantía 25 años en placas",
+        "Garantía 10 años en tienda PR",
         "Instalación incluida",
         "Permisos LUMA",
         "Respaldo en apagones"
       ],
-      savings: "Ahorro: 70-90%",
+      returnInfo: "Retorno de inversión: 7-9 años",
       ideal: "Ideal para familias promedio"
     },
     {
       name: "Premium",
       subtitle: "Sistema completo",
-      price: "Desde $28,500",
+      price: "Desde $23,000",
       popular: false,
       features: [
         "16+ paneles solares",
-        "Batería de alta capacidad",
-        "Microinversores",
-        "Monitoreo premium",
-        "Garantía extendida",
+        "Batería de litio alta capacidad",
+        "Inversor híbrido",
+        "Monitoreo avanzado",
+        "Garantía 25 años en placas",
+        "Garantía 10 años en tienda PR",
         "Instalación premium",
-        "Mantenimiento incluido",
-        "Soporte prioritario"
+        "2 mantenimientos limpieza gratis",
+        "Mantenimiento incluido"
       ],
-      savings: "Ahorro: 85-95%",
+      returnInfo: "Retorno de inversión: 8-10 años",
       ideal: "Ideal para casas grandes"
     }
   ];
@@ -109,7 +112,7 @@ const PricingSection = () => {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
                   <p className="text-gray-600 mb-4">{pkg.subtitle}</p>
                   <div className="text-3xl font-bold text-solar-500 mb-2">{pkg.price}</div>
-                  <div className="text-sm text-green-600 font-medium mb-2">{pkg.savings}</div>
+                  <div className="text-sm text-blue-600 font-medium mb-2">{pkg.returnInfo}</div>
                   <div className="text-sm text-gray-500">{pkg.ideal}</div>
                 </div>
 
