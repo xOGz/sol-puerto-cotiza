@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -10,7 +9,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "¿Cuánto puedo ahorrar con placas solares?",
-      answer: "El ahorro promedio de nuestros clientes es entre 70-90% en su factura eléctrica. Una familia que paga $200 mensuales puede reducir su factura a solo $20-60 al mes. El ahorro exacto depende de tu consumo actual, el tamaño del sistema y si incluyes batería de respaldo."
+      answer: "Nuestros clientes pagan hasta $4 en su factura eléctrica después de instalar paneles solares. El ahorro exacto depende de tu consumo actual, el tamaño del sistema y si incluyes batería de respaldo. Una familia que paga $200 mensuales puede reducir su factura a solo $4-20 al mes."
     },
     {
       question: "¿Necesito permiso de LUMA Energy?",
