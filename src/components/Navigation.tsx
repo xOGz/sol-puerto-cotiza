@@ -49,7 +49,7 @@ const Navigation = () => {
                 alt="Kilowatt PR Logo" 
                 className="w-10 h-10 object-contain"
               />
-              <span className="text-xl font-bold text-gray-900">Kilowatt PR</span>
+              <span className="text-xl font-bold text-gray-900">KILOWATT PR LLC</span>
             </div>
 
             {/* Desktop Navigation */}
