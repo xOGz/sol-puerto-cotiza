@@ -22,7 +22,7 @@ const Footer = () => {
               Hacemos la energía solar accesible para todas las familias puertorriqueñas.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-kilowatt-primary transition-colors">
+              <a href="https://www.facebook.com/kilowattprllc" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-kilowatt-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-kilowatt-primary transition-colors">
