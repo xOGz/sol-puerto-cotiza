@@ -1,5 +1,5 @@
 
-import { Shield, Smartphone, Clock, CreditCard } from "lucide-react";
+import { Shield, Smartphone, Clock, Wrench } from "lucide-react";
 
 const FeatureGrid = () => {
   const features = [
@@ -22,9 +22,9 @@ const FeatureGrid = () => {
       color: "from-purple-500 to-purple-600"
     },
     {
-      icon: CreditCard,
-      title: "Financiamiento disponible",
-      description: "Opciones flexibles de pago para que puedas empezar a ahorrar hoy",
+      icon: Wrench,
+      title: "Mantenimiento",
+      description: "Servicio técnico especializado para mantener tu sistema funcionando óptimamente",
       color: "from-solar-500 to-solar-600"
     }
   ];
