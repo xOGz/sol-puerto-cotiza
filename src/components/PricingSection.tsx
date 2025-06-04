@@ -71,14 +71,8 @@ const PricingSection = () => {
             Planes de energía solar
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Tenemos el sistema perfecto para cada hogar y presupuesto. Todos incluyen garantía completa y financiamiento disponible.
+            Tenemos el sistema perfecto para cada hogar y presupuesto. Todos incluyen garantía completa.
           </p>
-          
-          {/* Financing Banner */}
-          <div className="inline-flex items-center glass px-6 py-3 rounded-full">
-            <Star className="w-5 h-5 text-solar-500 mr-2" />
-            <span className="text-solar-700 font-medium">Financiamiento 0% interés inicial disponible</span>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
