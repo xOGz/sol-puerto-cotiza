@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -115,7 +114,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center animate-fade-in-up">
               <img 
-                src="https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?w=300&h=300&fit=crop&crop=face" 
+                src="/lovable-uploads/e73fded1-23f5-426c-8bd0-c75ad4095e5e.png" 
                 alt="Xavier Acevedo - CEO"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />

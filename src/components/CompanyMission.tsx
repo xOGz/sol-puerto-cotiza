@@ -67,7 +67,7 @@ const CompanyMission = () => {
             <div className="max-w-2xl mx-auto">
               <div className="mb-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?w=100&h=100&fit=crop&crop=face" 
+                  src="/lovable-uploads/e73fded1-23f5-426c-8bd0-c75ad4095e5e.png" 
                   alt="CEO Kilowatt PR"
                   className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
                 />
