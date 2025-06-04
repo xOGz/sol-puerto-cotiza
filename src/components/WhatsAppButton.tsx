@@ -5,13 +5,27 @@ import { useState } from "react";
 const WhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  const whatsappNumber = "17875550123";
+  const whatsappNumber = "17874312275";
   const message = "Hola, estoy interesado en obtener una cotización para placas solares. ¿Pueden ayudarme?";
 
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    
+    // For mobile devices, try to open WhatsApp app first, fallback to web
+    if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // Try WhatsApp app first
+      const whatsappApp = `whatsapp://send?phone=${whatsappNumber}&text=${encodedMessage}`;
+      window.location.href = whatsappApp;
+      
+      // Fallback to web version after a short delay if app doesn't open
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 1000);
+    } else {
+      // Desktop - open web version
+      window.open(whatsappUrl, '_blank');
+    }
   };
 
   return (
