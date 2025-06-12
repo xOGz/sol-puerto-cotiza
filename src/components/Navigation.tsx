@@ -16,15 +16,6 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
-    { href: "#inicio", label: "Inicio" },
-    { href: "#como-funciona", label: "Cómo Funciona" },
-    { href: "#servicios", label: "Servicios" },
-    { href: "#testimonios", label: "Testimonios" },
-    { href: "#precios", label: "Precios" },
-    { href: "#contacto", label: "Contacto" }
-  ];
-
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -33,12 +24,16 @@ const Navigation = () => {
     }
   };
 
+  const scrollToQuote = () => {
+    scrollToSection('#cotizacion');
+  };
+
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/80 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
+          ? 'bg-white/95 backdrop-blur-md shadow-xl' 
+          : 'bg-white/80 backdrop-blur-sm'
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
@@ -49,23 +44,26 @@ const Navigation = () => {
                 alt="Kilowatt PR Logo" 
                 className="w-10 h-10 object-contain"
               />
-              <span className="text-xl font-bold text-gray-900">KILOWATT PR LLC</span>
+              <span className="text-xl font-bold text-gray-900">KILOWATT PR</span>
             </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
-                >
-                  {item.label}
-                </button>
-              ))}
+            {/* Desktop Navigation - Simplified */}
+            <div className="hidden md:flex items-center space-x-6">
+              <button
+                onClick={() => scrollToSection('#testimonios')}
+                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              >
+                Testimonios
+              </button>
+              <a
+                href="tel:+17874312275"
+                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              >
+                (787) 431-2275
+              </a>
               <Button 
-                onClick={() => scrollToSection('#cotizacion')}
-                className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-secondary hover:to-kilowatt-primary text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 animate-glow"
+                onClick={scrollToQuote}
+                className="bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 Cotización Gratis
               </Button>
@@ -93,18 +91,21 @@ const Navigation = () => {
           <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out">
             <div className="p-6 pt-20">
               <div className="space-y-6">
-                {navItems.map((item) => (
-                  <button
-                    key={item.href}
-                    onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
-                  >
-                    {item.label}
-                  </button>
-                ))}
+                <button
+                  onClick={() => scrollToSection('#testimonios')}
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
+                >
+                  Testimonios
+                </button>
+                <a
+                  href="tel:+17874312275"
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
+                >
+                  Llamar: (787) 431-2275
+                </a>
                 <Button 
-                  onClick={() => scrollToSection('#cotizacion')}
-                  className="w-full bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-secondary hover:to-kilowatt-primary text-white py-3 rounded-full font-medium"
+                  onClick={scrollToQuote}
+                  className="w-full bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 text-white py-3 rounded-full font-bold"
                 >
                   Cotización Gratis
                 </Button>

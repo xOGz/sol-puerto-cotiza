@@ -9,15 +9,34 @@ const LeadCaptureForm = () => {
   const [formData, setFormData] = useState({
     nombre: "",
     telefono: "",
+    email: "",
     municipio: "",
-    consumo: ""
+    tipoPropiedad: ""
   });
   const { submitLead, isSubmitting } = useLeadSubmission();
 
   const municipios = [
-    "San Juan", "Bayamón", "Carolina", "Ponce", "Caguas", "Guaynabo", "Arecibo", 
-    "Toa Baja", "Mayagüez", "Trujillo Alto", "Cayey", "Aguadilla", "Humacao", 
-    "Vega Alta", "Manati", "Dorado", "Vega Baja", "Coamo", "Cidra", "Fajardo"
+    "Adjuntas", "Aguada", "Aguadilla", "Aguas Buenas", "Aibonito", "Arecibo", 
+    "Arroyo", "Barceloneta", "Barranquitas", "Bayamón", "Cabo Rojo", "Caguas", 
+    "Camuy", "Canóvanas", "Carolina", "Cataño", "Cayey", "Cidra", "Coamo", 
+    "Comerío", "Corozal", "Culebra", "Dorado", "Fajardo", "Florida", "Guánica", 
+    "Guayama", "Guayanilla", "Guaynabo", "Gurabo", "Hatillo", "Hormigueros", 
+    "Humacao", "Isabela", "Jayuya", "Juana Díaz", "Juncos", "Lajas", "Lares", 
+    "Las Marías", "Las Piedras", "Loíza", "Luquillo", "Manatí", "Maricao", 
+    "Maunabo", "Mayagüez", "Moca", "Morovis", "Naguabo", "Naranjito", "Orocovis", 
+    "Patillas", "Peñuelas", "Ponce", "Quebradillas", "Rincón", "Río Grande", 
+    "Sabana Grande", "Salinas", "San Germán", "San Juan", "San Lorenzo", 
+    "San Sebastián", "Santa Isabel", "Toa Alta", "Toa Baja", "Trujillo Alto", 
+    "Utuado", "Vega Alta", "Vega Baja", "Vieques", "Villalba", "Yabucoa", "Yauco"
+  ];
+
+  const tiposPropiedad = [
+    "Casa unifamiliar",
+    "Casa adosada/townhouse",
+    "Condominio",
+    "Apartamento",
+    "Casa con negocio",
+    "Finca/casa de campo"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,17 +49,27 @@ const LeadCaptureForm = () => {
       setFormData({
         nombre: "",
         telefono: "",
+        email: "",
         municipio: "",
-        consumo: ""
+        tipoPropiedad: ""
       });
     }
   };
 
   return (
-    <div className="glass p-8 md:p-12 rounded-3xl animate-fade-in-up">
+    <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl animate-fade-in-up border-4 border-yellow-200">
+      <div className="text-center mb-8">
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+          Empieza a ahorrar hoy mismo
+        </h3>
+        <p className="text-gray-700">
+          Completa el formulario y recibe tu cotización personalizada
+        </p>
+      </div>
+
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="nombre" className="block text-sm font-bold text-gray-900 mb-2">
             Nombre completo *
           </label>
           <Input
@@ -49,13 +78,13 @@ const LeadCaptureForm = () => {
             required
             value={formData.nombre}
             onChange={(e) => setFormData(prev => ({ ...prev, nombre: e.target.value }))}
-            className="w-full"
-            placeholder="Ej: María González"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500"
+            placeholder="Ej: Juan Pérez Rivera"
           />
         </div>
 
         <div>
-          <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="telefono" className="block text-sm font-bold text-gray-900 mb-2">
             Teléfono *
           </label>
           <Input
@@ -64,20 +93,35 @@ const LeadCaptureForm = () => {
             required
             value={formData.telefono}
             onChange={(e) => setFormData(prev => ({ ...prev, telefono: e.target.value }))}
-            className="w-full"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500"
             placeholder="Ej: (787) 555-0123"
           />
         </div>
 
         <div>
-          <label htmlFor="municipio" className="block text-sm font-medium text-gray-700 mb-2">
-            Municipio *
+          <label htmlFor="email" className="block text-sm font-bold text-gray-900 mb-2">
+            Email *
+          </label>
+          <Input
+            id="email"
+            type="email"
+            required
+            value={formData.email}
+            onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500"
+            placeholder="Ej: juan@email.com"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="municipio" className="block text-sm font-bold text-gray-900 mb-2">
+            Pueblo/Municipio *
           </label>
           <Select onValueChange={(value) => setFormData(prev => ({ ...prev, municipio: value }))}>
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="Selecciona tu municipio" />
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500">
+              <SelectValue placeholder="Selecciona tu pueblo" />
             </SelectTrigger>
-            <SelectContent className="bg-white z-50">
+            <SelectContent className="bg-white z-50 max-h-60">
               {municipios.map((municipio) => (
                 <SelectItem key={municipio} value={municipio}>
                   {municipio}
@@ -88,20 +132,19 @@ const LeadCaptureForm = () => {
         </div>
 
         <div>
-          <label htmlFor="consumo" className="block text-sm font-medium text-gray-700 mb-2">
-            Factura mensual promedio *
+          <label htmlFor="tipoPropiedad" className="block text-sm font-bold text-gray-900 mb-2">
+            Tipo de propiedad *
           </label>
-          <Select onValueChange={(value) => setFormData(prev => ({ ...prev, consumo: value }))}>
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="Selecciona tu rango" />
+          <Select onValueChange={(value) => setFormData(prev => ({ ...prev, tipoPropiedad: value }))}>
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500">
+              <SelectValue placeholder="Selecciona el tipo de propiedad" />
             </SelectTrigger>
             <SelectContent className="bg-white z-50">
-              <SelectItem value="menos-100">Menos de $100</SelectItem>
-              <SelectItem value="100-200">$100 - $200</SelectItem>
-              <SelectItem value="200-300">$200 - $300</SelectItem>
-              <SelectItem value="300-400">$300 - $400</SelectItem>
-              <SelectItem value="400-500">$400 - $500</SelectItem>
-              <SelectItem value="mas-500">Más de $500</SelectItem>
+              {tiposPropiedad.map((tipo) => (
+                <SelectItem key={tipo} value={tipo}>
+                  {tipo}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
         </div>
@@ -109,13 +152,14 @@ const LeadCaptureForm = () => {
         <Button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-solar-500 to-solar-600 hover:from-solar-600 hover:to-solar-700 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 animate-glow"
+          className="w-full bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 text-white py-6 rounded-xl font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
         >
-          {isSubmitting ? "Enviando..." : "Obtener mi cotización gratis"}
+          {isSubmitting ? "Enviando..." : "Obtén mi cotización gratis"}
         </Button>
 
-        <p className="text-xs text-gray-500 text-center">
-          Al enviar este formulario, aceptas que te contactemos para brindarte información sobre nuestros servicios.
+        <p className="text-xs text-gray-600 text-center leading-relaxed">
+          Al enviar este formulario, aceptas que te contactemos para brindarte información sobre nuestros servicios de placas solares. 
+          <span className="font-bold"> Sin spam, sin compromisos.</span>
         </p>
       </form>
     </div>

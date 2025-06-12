@@ -8,35 +8,39 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: "María González",
-      location: "Bayamón, PR",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b734?w=150&h=150&fit=crop&crop=face",
-      savings: "$180 menos en la factura mensual",
-      text: "Desde que instalamos las placas solares con Kilowatt PR, nuestra factura de luz bajó de $250 a solo $70. El proceso fue súper fácil y el equipo muy profesional.",
-      rating: 5
-    },
-    {
-      name: "Carlos Rodríguez",
+      name: "Juan R. Pérez",
       location: "Mayagüez, PR",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-      savings: "$220 menos en la factura mensual",
-      text: "Excelente servicio. Las placas solares han funcionado perfectamente durante dos años. La inversión se pagó sola en menos tiempo del esperado.",
-      rating: 5
-    },
-    {
-      name: "Ana Martínez",
-      location: "Ponce, PR",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      savings: "$160 menos en la factura mensual",
-      text: "Lo mejor de todo es el monitoreo desde el celular. Puedo ver cuánta energía estoy generando en tiempo real. Súper recomendado.",
-      rating: 5
-    },
-    {
-      name: "Luis Rivera",
-      location: "Caguas, PR",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      savings: "$195 menos en la factura mensual",
-      text: "El financiamiento que ofrecen es excelente. Pago menos por el préstamo de lo que antes pagaba de luz. Es una decisión inteligente.",
+      previousBill: "$280",
+      currentBill: "$15",
+      text: "Antes pagaba $280 mensual de luz. Ahora solo pago $15. Los muchachos de Kilowatt PR hicieron un trabajo excelente y me explicaron todo paso a paso.",
+      rating: 5
+    },
+    {
+      name: "Carmen M. Rivera",
+      location: "Caguas, PR",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      previousBill: "$350",
+      currentBill: "$22",
+      text: "Mi factura bajó de $350 a solo $22 al mes. Durante el huracán Fiona tuvimos luz cuando todo el barrio estaba a oscuras. Súper recomendado.",
+      rating: 5
+    },
+    {
+      name: "Miguel A. Santos",
+      location: "Bayamón, PR",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      previousBill: "$195",
+      currentBill: "$8",
+      text: "El financiamiento fue perfecto - pago menos del préstamo de lo que antes pagaba de luz. La instalación fue rápida y profesional.",
+      rating: 5
+    },
+    {
+      name: "Ana L. Morales",
+      location: "Ponce, PR",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b734?w=150&h=150&fit=crop&crop=face",
+      previousBill: "$420",
+      currentBill: "$35",
+      text: "Tengo un negocio en casa y mi factura era altísima. Ahora ahorro más de $380 al mes. Kilowatt PR cumplió todo lo que prometieron.",
       rating: 5
     }
   ];
@@ -50,44 +54,52 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonios" className="section-spacing bg-white">
+    <section id="testimonios" className="section-spacing bg-gradient-to-br from-green-50 to-yellow-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Lo que dicen nuestros clientes
+            Familias boricuas ya están ahorrando
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Miles de familias puertorriqueñas ya están ahorrando con energía solar
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            Estos son algunos de nuestros clientes satisfechos en toda la isla
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Main Testimonial */}
-          <div className="glass p-8 md:p-12 rounded-3xl text-center animate-fade-in-up">
+          <div className="bg-white p-8 md:p-12 rounded-3xl text-center shadow-2xl animate-fade-in-up">
             <div className="flex justify-center mb-4">
               {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-solar-400 fill-current" />
+                <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
               ))}
             </div>
             
-            <blockquote className="text-lg md:text-xl text-gray-700 mb-6 italic">
+            <blockquote className="text-lg md:text-xl text-gray-700 mb-6 italic leading-relaxed">
               "{testimonials[currentTestimonial].text}"
             </blockquote>
             
-            <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center justify-center mb-6">
               <img 
                 src={testimonials[currentTestimonial].image} 
                 alt={testimonials[currentTestimonial].name}
-                className="w-16 h-16 rounded-full mr-4 object-cover"
+                className="w-16 h-16 rounded-full mr-4 object-cover border-4 border-yellow-200"
               />
               <div className="text-left">
-                <div className="font-semibold text-gray-900">{testimonials[currentTestimonial].name}</div>
+                <div className="font-bold text-gray-900 text-lg">{testimonials[currentTestimonial].name}</div>
                 <div className="text-gray-600">{testimonials[currentTestimonial].location}</div>
               </div>
             </div>
             
-            <div className="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full font-semibold">
-              {testimonials[currentTestimonial].savings}
+            <div className="flex justify-center items-center space-x-8">
+              <div className="text-center">
+                <div className="text-sm text-gray-600">Antes</div>
+                <div className="text-2xl font-bold text-red-500">{testimonials[currentTestimonial].previousBill}</div>
+              </div>
+              <div className="text-4xl text-gray-400">→</div>
+              <div className="text-center">
+                <div className="text-sm text-gray-600">Ahora</div>
+                <div className="text-2xl font-bold text-green-500">{testimonials[currentTestimonial].currentBill}</div>
+              </div>
             </div>
           </div>
 
@@ -96,7 +108,7 @@ const TestimonialsSection = () => {
             variant="outline"
             size="icon"
             onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 glass border-gray-300 hover:bg-white/50"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white border-gray-300 hover:bg-gray-50 shadow-lg"
           >
             <ChevronLeft className="w-5 h-5" />
           </Button>
@@ -105,7 +117,7 @@ const TestimonialsSection = () => {
             variant="outline"
             size="icon"
             onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 glass border-gray-300 hover:bg-white/50"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white border-gray-300 hover:bg-gray-50 shadow-lg"
           >
             <ChevronRight className="w-5 h-5" />
           </Button>
@@ -117,26 +129,10 @@ const TestimonialsSection = () => {
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentTestimonial ? 'bg-solar-500' : 'bg-gray-300'
+                  index === currentTestimonial ? 'bg-yellow-500' : 'bg-gray-300'
                 }`}
               />
             ))}
-          </div>
-        </div>
-
-        {/* Bottom Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-solar-500 mb-2">98%</div>
-            <div className="text-gray-600">Satisfacción del cliente</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-solar-500 mb-2">$189</div>
-            <div className="text-gray-600">Ahorro promedio mensual</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-solar-500 mb-2">4.9★</div>
-            <div className="text-gray-600">Rating en Google</div>
           </div>
         </div>
       </div>

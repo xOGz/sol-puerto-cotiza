@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, CheckCircle } from "lucide-react";
+import { Play, CheckCircle, Clock, Users, Award } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 
 const HeroSection = () => {
@@ -16,71 +16,90 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image/Video */}
+      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-yellow-50 via-green-50 to-white">
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-20"
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&h=1080&fit=crop')`
+              backgroundImage: `url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&h=1080&fit=crop')`
             }}
           />
         </div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto animate-fade-in-up">
-            {/* Badge */}
-            <div className="inline-flex items-center glass rounded-full px-4 py-2 mb-6">
-              <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
-              <span className="text-white text-sm font-medium">Confiado por 500+ familias puertorriqueñas</span>
+          <div className="max-w-5xl mx-auto animate-fade-in-up">
+            
+            {/* Urgency Badge */}
+            <div className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full px-6 py-2 mb-6 animate-pulse">
+              <Clock className="w-4 h-4 mr-2" />
+              <span className="text-sm font-bold">¡Oferta válida hasta el 30 de junio!</span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              <span className="block">Placas Solares</span>
-              <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">en Puerto Rico</span>
+            {/* Main Headline */}
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              <span className="block">Reduce tu factura</span>
+              <span className="block">de luz hasta</span>
+              <span className="block bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-transparent">90%</span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Reduce tu factura hasta <span className="font-bold text-kilowatt-accent">90%</span> con energía solar confiable y garantizada.
+            {/* Subheadline */}
+            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Con placas solares instaladas por <span className="font-bold text-green-600">expertos locales</span> – Cotización gratis
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            {/* Main CTA */}
+            <div className="mb-12">
               <Button 
                 onClick={scrollToQuote}
                 size="lg"
-                className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-secondary hover:to-kilowatt-primary text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 animate-glow"
+                className="bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
               >
-                Obtén tu cotización gratis
+                Solicita tu cotización gratis
               </Button>
-              
-              <Button 
-                variant="outline"
-                size="lg"
-                onClick={() => setIsVideoModalOpen(true)}
-                className="glass border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-full font-semibold text-lg"
-              >
-                <Play className="w-5 h-5 mr-2" />
-                Ver cómo funciona
-              </Button>
+              <p className="text-sm text-gray-600 mt-2">Sin compromiso • Respuesta en 24 horas</p>
+            </div>
+
+            {/* Value Props Icons */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                <Award className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
+                <div className="text-lg font-bold text-gray-900 mb-1">10 años</div>
+                <div className="text-gray-700 text-sm">Garantía en equipos</div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
+                <div className="text-lg font-bold text-gray-900 mb-1">Instalación</div>
+                <div className="text-gray-700 text-sm">Profesional</div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                <Users className="w-8 h-8 text-blue-500 mx-auto mb-3" />
+                <div className="text-lg font-bold text-gray-900 mb-1">Financiamiento</div>
+                <div className="text-gray-700 text-sm">Sin pronto</div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
+                <div className="text-lg font-bold text-gray-900 mb-1">Ahorros</div>
+                <div className="text-gray-700 text-sm">Garantizados</div>
+              </div>
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white mb-1">25</div>
-                <div className="text-white/70 text-sm">Años de garantía</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white mb-1">500+</div>
-                <div className="text-white/70 text-sm">Instalaciones</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white mb-1">90%</div>
-                <div className="text-white/70 text-sm">Ahorro promedio</div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 max-w-4xl mx-auto">
+              <div className="grid grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-900 mb-1">500+</div>
+                  <div className="text-gray-700 text-sm">Familias servidas</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-900 mb-1">15</div>
+                  <div className="text-gray-700 text-sm">Años experiencia</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-900 mb-1">$189</div>
+                  <div className="text-gray-700 text-sm">Ahorro promedio</div>
+                </div>
               </div>
             </div>
           </div>
@@ -88,8 +107,8 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-gray-600 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
