@@ -42,8 +42,8 @@ const PricingSection = () => {
       ideal: "Ideal para familias promedio"
     },
     {
-      name: "Premium",
-      subtitle: "Sistema completo",
+      name: "Sistema Grande",
+      subtitle: "XXL - Sistema completo",
       price: "Desde $23,000",
       popular: false,
       features: [
@@ -93,21 +93,21 @@ const PricingSection = () => {
               {/* Popular Badge */}
               {pkg.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-gradient-to-r from-orange-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  <div className="bg-gradient-to-r from-yellow-500 to-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     Recomendado
                   </div>
                 </div>
               )}
               
               <div className={`glass p-8 rounded-3xl h-full ${
-                pkg.popular ? 'border-2 border-orange-200 shadow-xl' : ''
+                pkg.popular ? 'border-2 border-yellow-200 shadow-xl' : ''
               }`}>
                 {/* Header */}
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
                   <p className="text-gray-600 mb-4">{pkg.subtitle}</p>
-                  <div className="text-3xl font-bold text-orange-500 mb-2">{pkg.price}</div>
-                  <div className="text-sm text-blue-600 font-medium mb-2">{pkg.returnInfo}</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">{pkg.price}</div>
+                  <div className="text-sm text-yellow-600 font-medium mb-2">{pkg.returnInfo}</div>
                   <div className="text-sm text-gray-500">{pkg.ideal}</div>
                 </div>
 
@@ -126,8 +126,8 @@ const PricingSection = () => {
                   onClick={scrollToQuote}
                   className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
                     pkg.popular
-                      ? 'bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white animate-glow'
-                      : 'bg-white border-2 border-orange-200 text-orange-600 hover:bg-orange-50'
+                      ? 'bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 text-white animate-glow'
+                      : 'bg-white border-2 border-yellow-200 text-green-600 hover:bg-yellow-50'
                   }`}
                 >
                   Obtener cotización

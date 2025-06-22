@@ -51,19 +51,19 @@ const Navigation = () => {
             <div className="hidden md:flex items-center space-x-6">
               <button
                 onClick={() => scrollToSection('#testimonios')}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
               >
                 Testimonios
               </button>
               <a
                 href="tel:+17874312275"
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
               >
                 (787) 431-2275
               </a>
               <Button 
                 onClick={scrollToQuote}
-                className="bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
+                className="bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 Cotización Gratis
               </Button>
@@ -93,19 +93,19 @@ const Navigation = () => {
               <div className="space-y-6">
                 <button
                   onClick={() => scrollToSection('#testimonios')}
-                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
                 >
                   Testimonios
                 </button>
                 <a
                   href="tel:+17874312275"
-                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
                 >
                   Llamar: (787) 431-2275
                 </a>
                 <Button 
                   onClick={scrollToQuote}
-                  className="w-full bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white py-3 rounded-full font-bold"
+                  className="w-full bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white py-3 rounded-full font-bold"
                 >
                   Cotización Gratis
                 </Button>

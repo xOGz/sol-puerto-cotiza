@@ -16,7 +16,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-50 via-blue-50 to-white">
+      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <div 
@@ -41,12 +41,12 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="block">Reduce tu factura</span>
               <span className="block">de luz hasta</span>
-              <span className="block bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text text-transparent">90%</span>
+              <span className="block bg-gradient-to-r from-green-500 to-yellow-500 bg-clip-text text-transparent">90%</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Con placas solares instaladas por <span className="font-bold text-blue-600">expertos locales</span> – Cotización gratis
+              Con placas solares instaladas por <span className="font-bold text-green-600">expertos locales</span> – Cotización gratis
             </p>
 
             {/* Main CTA */}
@@ -54,7 +54,7 @@ const HeroSection = () => {
               <Button 
                 onClick={scrollToQuote}
                 size="lg"
-                className="bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
+                className="bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
               >
                 Solicita tu cotización gratis
               </Button>
@@ -64,22 +64,22 @@ const HeroSection = () => {
             {/* Value Props Icons */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
+                <Award className="w-8 h-8 text-green-500 mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">10 años</div>
                 <div className="text-gray-700 text-sm">Garantía en equipos</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <CheckCircle className="w-8 h-8 text-blue-500 mx-auto mb-3" />
+                <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Instalación</div>
                 <div className="text-gray-700 text-sm">Profesional</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <Users className="w-8 h-8 text-orange-500 mx-auto mb-3" />
+                <Users className="w-8 h-8 text-green-500 mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Sellado</div>
                 <div className="text-gray-700 text-sm">De techo</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <CheckCircle className="w-8 h-8 text-blue-500 mx-auto mb-3" />
+                <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Lavado</div>
                 <div className="text-gray-700 text-sm">De placas</div>
               </div>
