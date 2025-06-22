@@ -11,7 +11,7 @@ const LeadCaptureForm = () => {
     telefono: "",
     email: "",
     municipio: "",
-    tipoPropiedad: ""
+    consumo: "200-300"
   });
   const { submitLead, isSubmitting } = useLeadSubmission();
 
@@ -30,13 +30,12 @@ const LeadCaptureForm = () => {
     "Utuado", "Vega Alta", "Vega Baja", "Vieques", "Villalba", "Yabucoa", "Yauco"
   ];
 
-  const tiposPropiedad = [
-    "Casa unifamiliar",
-    "Casa adosada/townhouse",
-    "Condominio",
-    "Apartamento",
-    "Casa con negocio",
-    "Finca/casa de campo"
+  const rangosConsumo = [
+    "Menos de $100",
+    "$100-200",
+    "$200-300",
+    "$300-500",
+    "Más de $500"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -51,13 +50,13 @@ const LeadCaptureForm = () => {
         telefono: "",
         email: "",
         municipio: "",
-        tipoPropiedad: ""
+        consumo: "200-300"
       });
     }
   };
 
   return (
-    <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl animate-fade-in-up border-4 border-yellow-200">
+    <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl animate-fade-in-up border-4 border-orange-200">
       <div className="text-center mb-8">
         <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
           Empieza a ahorrar hoy mismo
@@ -78,7 +77,7 @@ const LeadCaptureForm = () => {
             required
             value={formData.nombre}
             onChange={(e) => setFormData(prev => ({ ...prev, nombre: e.target.value }))}
-            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-orange-500"
             placeholder="Ej: Juan Pérez Rivera"
           />
         </div>
@@ -93,7 +92,7 @@ const LeadCaptureForm = () => {
             required
             value={formData.telefono}
             onChange={(e) => setFormData(prev => ({ ...prev, telefono: e.target.value }))}
-            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-orange-500"
             placeholder="Ej: (787) 555-0123"
           />
         </div>
@@ -108,7 +107,7 @@ const LeadCaptureForm = () => {
             required
             value={formData.email}
             onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-orange-500"
             placeholder="Ej: juan@email.com"
           />
         </div>
@@ -118,7 +117,7 @@ const LeadCaptureForm = () => {
             Pueblo/Municipio *
           </label>
           <Select onValueChange={(value) => setFormData(prev => ({ ...prev, municipio: value }))}>
-            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500">
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-orange-500">
               <SelectValue placeholder="Selecciona tu pueblo" />
             </SelectTrigger>
             <SelectContent className="bg-white z-50 max-h-60">
@@ -132,17 +131,17 @@ const LeadCaptureForm = () => {
         </div>
 
         <div>
-          <label htmlFor="tipoPropiedad" className="block text-sm font-bold text-gray-900 mb-2">
-            Tipo de propiedad *
+          <label htmlFor="consumo" className="block text-sm font-bold text-gray-900 mb-2">
+            ¿Cuánto pagas de luz al mes? *
           </label>
-          <Select onValueChange={(value) => setFormData(prev => ({ ...prev, tipoPropiedad: value }))}>
-            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-yellow-500">
-              <SelectValue placeholder="Selecciona el tipo de propiedad" />
+          <Select onValueChange={(value) => setFormData(prev => ({ ...prev, consumo: value }))}>
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-orange-500">
+              <SelectValue placeholder="Selecciona tu rango" />
             </SelectTrigger>
             <SelectContent className="bg-white z-50">
-              {tiposPropiedad.map((tipo) => (
-                <SelectItem key={tipo} value={tipo}>
-                  {tipo}
+              {rangosConsumo.map((rango) => (
+                <SelectItem key={rango} value={rango}>
+                  {rango}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -152,7 +151,7 @@ const LeadCaptureForm = () => {
         <Button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 text-white py-6 rounded-xl font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
+          className="w-full bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white py-6 rounded-xl font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
         >
           {isSubmitting ? "Enviando..." : "Obtén mi cotización gratis"}
         </Button>

@@ -24,7 +24,7 @@ const LeadCaptureSection = () => {
   };
 
   return (
-    <section id="cotizacion" className="section-spacing bg-gradient-to-br from-yellow-50 via-green-50 to-white">
+    <section id="cotizacion" className="section-spacing bg-gradient-to-br from-orange-50 via-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           
@@ -39,7 +39,7 @@ const LeadCaptureSection = () => {
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
               No dejes pasar esta oportunidad. Los precios de la luz seguirán subiendo, 
-              pero <span className="font-bold text-green-600">tú puedes librarte para siempre</span>.
+              pero <span className="font-bold text-blue-600">tú puedes librarte para siempre</span>.
             </p>
           </div>
 
@@ -58,8 +58,8 @@ const LeadCaptureSection = () => {
                     <div className="text-sm font-bold text-gray-900">LUMA Energy</div>
                     <div className="text-xs text-gray-600">Certificado</div>
                   </div>
-                  <div className="p-4 bg-green-50 rounded-xl">
-                    <Award className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                  <div className="p-4 bg-orange-50 rounded-xl">
+                    <Award className="w-8 h-8 text-orange-600 mx-auto mb-2" />
                     <div className="text-sm font-bold text-gray-900">Comisión de Energía</div>
                     <div className="text-xs text-gray-600">Aprobado</div>
                   </div>
@@ -72,7 +72,7 @@ const LeadCaptureSection = () => {
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-yellow-500 to-green-500 p-8 rounded-3xl max-w-3xl mx-auto text-white">
+            <div className="bg-gradient-to-r from-orange-500 to-blue-500 p-8 rounded-3xl max-w-3xl mx-auto text-white">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 ¿Prefieres hablar directamente?
               </h3>
@@ -82,13 +82,13 @@ const LeadCaptureSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="tel:+17874312275" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 rounded-full font-bold hover:scale-105 transition-transform duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-full font-bold hover:scale-105 transition-transform duration-300"
                 >
                   Llamar ahora: (787) 431-2275
                 </a>
                 <Button 
                   onClick={handleWhatsAppClick}
-                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform duration-300 flex items-center space-x-2"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform duration-300 flex items-center space-x-2"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>WhatsApp</span>

@@ -1,3 +1,4 @@
+
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,7 +15,8 @@ const PricingSection = () => {
         "Monitoreo avanzado",
         "Garantía 25 años en placas",
         "Garantía 10 años inversor en tienda PR",
-        "Permisos LUMA"
+        "Permisos LUMA",
+        "Sellado de techo incluido"
       ],
       returnInfo: "Retorno de inversión: 4-6 años",
       ideal: "Ideal para hogares pequeños"
@@ -32,7 +34,9 @@ const PricingSection = () => {
         "Garantía 25 años en placas",
         "Garantía 10 años inversor y batería en tienda PR",
         "Permisos LUMA",
-        "Respaldo en apagones"
+        "Respaldo en apagones",
+        "Sellado de techo incluido",
+        "Lavado de placas 1 vez al año"
       ],
       returnInfo: "Retorno de inversión: 5-7 años",
       ideal: "Ideal para familias promedio"
@@ -49,6 +53,8 @@ const PricingSection = () => {
         "Monitoreo avanzado",
         "Garantía 25 años en placas",
         "Garantía 10 años inversor y batería en tienda PR",
+        "Sellado de techo incluido",
+        "Lavado de placas 2 veces al año",
         "2 mantenimientos limpieza gratis"
       ],
       returnInfo: "Retorno de inversión: 6-8 años",
@@ -87,20 +93,20 @@ const PricingSection = () => {
               {/* Popular Badge */}
               {pkg.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-gradient-to-r from-solar-500 to-solar-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  <div className="bg-gradient-to-r from-orange-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     Recomendado
                   </div>
                 </div>
               )}
               
               <div className={`glass p-8 rounded-3xl h-full ${
-                pkg.popular ? 'border-2 border-solar-200 shadow-xl' : ''
+                pkg.popular ? 'border-2 border-orange-200 shadow-xl' : ''
               }`}>
                 {/* Header */}
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
                   <p className="text-gray-600 mb-4">{pkg.subtitle}</p>
-                  <div className="text-3xl font-bold text-solar-500 mb-2">{pkg.price}</div>
+                  <div className="text-3xl font-bold text-orange-500 mb-2">{pkg.price}</div>
                   <div className="text-sm text-blue-600 font-medium mb-2">{pkg.returnInfo}</div>
                   <div className="text-sm text-gray-500">{pkg.ideal}</div>
                 </div>
@@ -120,8 +126,8 @@ const PricingSection = () => {
                   onClick={scrollToQuote}
                   className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
                     pkg.popular
-                      ? 'bg-gradient-to-r from-solar-500 to-solar-600 hover:from-solar-600 hover:to-solar-700 text-white animate-glow'
-                      : 'bg-white border-2 border-solar-200 text-solar-600 hover:bg-solar-50'
+                      ? 'bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white animate-glow'
+                      : 'bg-white border-2 border-orange-200 text-orange-600 hover:bg-orange-50'
                   }`}
                 >
                   Obtener cotización
