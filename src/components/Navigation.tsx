@@ -48,10 +48,10 @@ const Navigation = () => {
             <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="/lovable-uploads/35a5cb3f-1dc6-4637-a191-795956768438.png" 
-                alt="Kilowatt PR Logo - Placas Solares Puerto Rico" 
+                alt="Kilowatt PR LLC Logo - Placas Solares Puerto Rico" 
                 className="w-10 h-10 object-contain"
               />
-              <span className="text-xl font-bold text-gray-900">KILOWATT PR</span>
+              <span className="text-xl font-bold text-gray-900">KILOWATT PR LLC</span>
             </Link>
 
             {/* Desktop Navigation */}

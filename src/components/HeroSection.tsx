@@ -31,12 +31,6 @@ const HeroSection = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-5xl mx-auto animate-fade-in-up">
             
-            {/* Urgency Badge */}
-            <div className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full px-6 py-2 mb-6 animate-pulse">
-              <Clock className="w-4 h-4 mr-2" />
-              <span className="text-sm font-bold">¡Oferta válida hasta el 30 de junio!</span>
-            </div>
-
             {/* Main Headline - SEO Optimized */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="block">Placas Solares</span>
