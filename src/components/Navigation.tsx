@@ -2,10 +2,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +19,11 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (href: string) => {
+    if (location.pathname !== '/') {
+      window.location.href = `/${href}`;
+      return;
+    }
+    
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -38,16 +45,16 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="/lovable-uploads/35a5cb3f-1dc6-4637-a191-795956768438.png" 
-                alt="Kilowatt PR Logo" 
+                alt="Kilowatt PR Logo - Placas Solares Puerto Rico" 
                 className="w-10 h-10 object-contain"
               />
               <span className="text-xl font-bold text-gray-900">KILOWATT PR</span>
-            </div>
+            </Link>
 
-            {/* Desktop Navigation - Simplified */}
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
               <button
                 onClick={() => scrollToSection('#testimonios')}
@@ -55,6 +62,12 @@ const Navigation = () => {
               >
                 Testimonios
               </button>
+              <Link
+                to="/blog"
+                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+              >
+                Blog Solar
+              </Link>
               <a
                 href="tel:+17874312275"
                 className="text-gray-700 hover:text-green-600 transition-colors font-medium"
@@ -97,6 +110,13 @@ const Navigation = () => {
                 >
                   Testimonios
                 </button>
+                <Link
+                  to="/blog"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
+                >
+                  Blog Solar
+                </Link>
                 <a
                   href="tel:+17874312275"
                   className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"

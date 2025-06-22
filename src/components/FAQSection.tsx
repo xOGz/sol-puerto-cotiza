@@ -10,28 +10,36 @@ import { Button } from "@/components/ui/button";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "¿Qué incluye el sellado de techo?",
-      answer: "Nuestro servicio de sellado incluye la inspección completa del techo, sellado de grietas y huecos, aplicación de materiales impermeabilizantes de alta calidad, y garantía de 2 años en el trabajo. Esto protege tu inversión y evita filtraciones que puedan dañar tu sistema solar."
+      question: "¿Cuánto cuestan las placas solares en Puerto Rico?",
+      answer: "El costo promedio de un sistema solar residencial en Puerto Rico varía entre $15,000-$35,000 antes de incentivos. Con los créditos federales y locales, el costo neto puede reducirse significativamente. Ofrecemos planes de financiamiento desde $0 inicial. Nuestra cotización gratuita incluye un análisis detallado de costos y ahorros proyectados específico para tu hogar."
     },
     {
-      question: "¿Con qué frecuencia necesito lavar las placas solares?",
-      answer: "Recomendamos lavar las placas cada 6-12 meses dependiendo de tu ubicación. En zonas con mucho polvo o cerca del mar, puede ser necesario más frecuente. Nuestro servicio de lavado incluye limpieza especializada que no daña los paneles y puede aumentar la eficiencia hasta un 15%."
+      question: "¿Qué incluye el sellado de techo con la instalación de placas solares?",
+      answer: "Nuestro servicio de sellado de techo incluye: inspección completa de la estructura, sellado profesional de todas las penetraciones, aplicación de materiales impermeabilizantes de alta calidad (Sika, Henry, GAF), garantía de 2 años en mano de obra, y certificado de impermeabilización. Esto protege tu inversión solar y evita filtraciones futuras."
     },
     {
-      question: "¿Qué pasa si me mudo de casa?",
-      answer: "Las placas solares aumentan el valor de tu propiedad entre $15,000-$25,000. Si te mudas, puedes vender la casa con las placas incluidas o en algunos casos transferir el sistema al nuevo dueño. También evaluamos opciones para mover el sistema a tu nueva residencia."
+      question: "¿Con qué frecuencia debo lavar las placas solares en Puerto Rico?",
+      answer: "En Puerto Rico recomendamos lavar las placas solares cada 6-8 meses debido al polvo del Sahara, sal marina y lluvia frecuente. En zonas costeras como Rincón, Aguadilla o Cabo Rojo, puede ser necesario cada 4-6 meses. Nuestro servicio de lavado especializado puede aumentar la eficiencia hasta 15% y incluye inspección de conexiones."
     },
     {
-      question: "¿Qué incluye la cotización gratis?",
-      answer: "Incluye: evaluación completa del consumo, diseño personalizado del sistema, cálculo exacto de ahorros, análisis del techo y recomendaciones de sellado, estimado de instalación y todos los permisos necesarios. No hay letra pequeña ni costos ocultos."
+      question: "¿Funcionan las placas solares durante apagones de LUMA Energy?",
+      answer: "Con nuestros sistemas solares con batería de respaldo (Tesla Powerwall, Enphase, LG Chem), tendrás electricidad durante los apagones de LUMA. Las placas cargan las baterías durante el día y puedes usar esa energía cuando se va la luz. Es como tener tu propia planta eléctrica personal las 24 horas."
     },
     {
-      question: "¿Funcionan las placas durante apagones?",
-      answer: "Con nuestro sistema de baterías de respaldo, tendrás electricidad durante apagones. Las placas cargan las baterías durante el día y puedes usar esa energía cuando LUMA se va. Es como tener tu propia planta eléctrica."
+      question: "¿Qué incluye la cotización gratuita de placas solares?",
+      answer: "Nuestra cotización 100% gratuita incluye: evaluación completa de tu consumo eléctrico, diseño 3D personalizado del sistema, cálculo exacto de ahorros proyectados a 25 años, análisis del techo y recomendaciones de sell lado si es necesario, estimado de instalación, trámites de permisos con LUMA y municipio, opciones de financiamiento, y seguimiento personalizado. Sin letra pequeña ni costos ocultos."
     },
     {
-      question: "¿Cuánto tiempo toma la instalación?",
-      answer: "Desde que firmas el contrato hasta que el sistema está produciendo energía: 4-8 semanas. Esto incluye permisos de LUMA, municipio y inspecciones. La instalación física en tu techo toma solo 1-2 días, incluyendo el sellado si es necesario."
+      question: "¿Cuánto tiempo toma instalar placas solares en Puerto Rico?",
+      answer: "El proceso completo desde la firma del contrato hasta que tu sistema está produciendo energía limpia toma 6-10 semanas. Esto incluye: permisos de LUMA Energy (2-3 semanas), permisos municipales (1-2 semanas), instalación física (1-2 días), inspecciones (1 semana), y conexión final. La instalación en tu techo, incluyendo sellado, toma solo 1-2 días con nuestro equipo certificado."
+    },
+    {
+      question: "¿Qué garantías ofrecen en las placas solares?",
+      answer: "Ofrecemos garantías líderes en la industria: 25 años en paneles solares (producción), 25 años en microinversores Enphase, 10 años en baterías Tesla/LG, 2 años en mano de obra e instalación, y 2 años en sellado de techo. Además, monitoreo 24/7 del sistema y servicio técnico local en Puerto Rico."
+    },
+    {
+      question: "¿Aumentan las placas solares el valor de mi casa en Puerto Rico?",
+      answer: "Sí, estudios muestran que las placas solares aumentan el valor de tu propiedad entre $15,000-$25,000 en Puerto Rico. Si decides mudarte, puedes vender la casa con el sistema incluido (aumentando precio de venta), transferir el sistema al nuevo dueño, o en algunos casos mover el sistema a tu nueva residencia. La inversión en energía solar se recupera y genera ganancia."
     }
   ];
 
@@ -47,10 +55,10 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Preguntas frecuentes
+            Preguntas Frecuentes - Placas Solares Puerto Rico
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Resolvemos todas tus dudas sobre placas solares en Puerto Rico
+            Resolvemos todas tus dudas sobre instalación de paneles solares, costos, garantías y financiamiento en Puerto Rico
           </p>
         </div>
 
@@ -78,25 +86,25 @@ const FAQSection = () => {
         <div className="text-center mt-16 animate-fade-in-up">
           <div className="bg-gradient-to-r from-green-500 to-yellow-500 p-8 rounded-3xl max-w-2xl mx-auto text-white">
             <h3 className="text-2xl font-bold mb-4">
-              ¿Tienes más preguntas?
+              ¿Listo para empezar a ahorrar con energía solar?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Nuestros expertos están listos para resolver cualquier duda sobre tu proyecto solar
+              Nuestros expertos en placas solares están listos para crear tu cotización personalizada
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={scrollToQuote}
                 className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform duration-300"
               >
-                Obtén tu cotización gratis
+                🔥 Cotización Gratis en 24hrs
               </Button>
               <a 
-                href="https://wa.me/17874312275" 
+                href="https://wa.me/17874312275?text=Hola,%20quiero%20información%20sobre%20placas%20solares%20para%20mi%20casa%20en%20Puerto%20Rico" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-bold hover:scale-105 transition-transform duration-300"
               >
-                Chatea por WhatsApp
+                💬 WhatsApp Directo
               </a>
             </div>
           </div>

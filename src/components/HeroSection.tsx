@@ -37,17 +37,18 @@ const HeroSection = () => {
               <span className="text-sm font-bold">¡Oferta válida hasta el 30 de junio!</span>
             </div>
 
-            {/* Main Headline */}
+            {/* Main Headline - SEO Optimized */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              <span className="block">Reduce tu factura</span>
-              <span className="block">de luz hasta</span>
-              <span className="block bg-gradient-to-r from-green-500 to-yellow-500 bg-clip-text text-transparent">90%</span>
+              <span className="block">Placas Solares</span>
+              <span className="block">Puerto Rico</span>
+              <span className="block bg-gradient-to-r from-green-500 to-yellow-500 bg-clip-text text-transparent">Ahorra 90%</span>
             </h1>
 
-            {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Con placas solares instaladas por <span className="font-bold text-green-600">expertos locales</span> – Cotización gratis
-            </p>
+            {/* Subheadline - Long tail keywords */}
+            <h2 className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Instalación profesional de <strong>paneles solares con batería</strong> en Aguada, Mayagüez y toda la isla. 
+              <span className="block mt-2 font-bold text-green-600">Cotización 100% gratis en menos de 24 horas</span>
+            </h2>
 
             {/* Main CTA */}
             <div className="mb-12">
@@ -56,17 +57,17 @@ const HeroSection = () => {
                 size="lg"
                 className="bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
               >
-                Solicita tu cotización gratis
+                Cotiza Gratis Ahora
               </Button>
-              <p className="text-sm text-gray-600 mt-2">Sin compromiso • Respuesta en 24 horas</p>
+              <p className="text-sm text-gray-600 mt-2">✓ Sin compromiso ✓ Respuesta garantizada en 24hrs ✓ Expertos locales</p>
             </div>
 
-            {/* Value Props Icons */}
+            {/* Value Props Icons - SEO Enhanced */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <Award className="w-8 h-8 text-green-500 mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">10 años</div>
-                <div className="text-gray-700 text-sm">Garantía en equipos</div>
+                <div className="text-lg font-bold text-gray-900 mb-1">25 años</div>
+                <div className="text-gray-700 text-sm">Garantía placas</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
@@ -76,7 +77,7 @@ const HeroSection = () => {
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <Users className="w-8 h-8 text-green-500 mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Sellado</div>
-                <div className="text-gray-700 text-sm">De techo</div>
+                <div className="text-gray-700 text-sm">De techo incluido</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
@@ -85,20 +86,21 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Trust Indicators */}
+            {/* Trust Indicators - Local SEO */}
             <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">Empresa #1 en Instalación de Placas Solares Puerto Rico</h3>
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gray-900 mb-1">500+</div>
-                  <div className="text-gray-700 text-sm">Familias servidas</div>
+                  <div className="text-gray-700 text-sm">Familias boricuas</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">15</div>
+                  <div className="text-3xl font-bold text-gray-900 mb-1">15+</div>
                   <div className="text-gray-700 text-sm">Años experiencia</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gray-900 mb-1">$189</div>
-                  <div className="text-gray-700 text-sm">Ahorro promedio</div>
+                  <div className="text-gray-700 text-sm">Ahorro mensual promedio</div>
                 </div>
               </div>
             </div>
