@@ -16,15 +16,17 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white">
+      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-20"
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&h=1080&fit=crop')`
+              backgroundImage: `url('/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png')`
             }}
           />
+          {/* Dark gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
         </div>
 
         {/* Content */}
@@ -32,16 +34,16 @@ const HeroSection = () => {
           <div className="max-w-5xl mx-auto animate-fade-in-up">
             
             {/* Main Headline - SEO Optimized */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               <span className="block">Placas Solares</span>
               <span className="block">Puerto Rico</span>
               <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">Ahorra 90%</span>
             </h1>
 
             {/* Subheadline - Long tail keywords */}
-            <h2 className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
               Instalación profesional de <strong>paneles solares con batería</strong> en Aguada, Mayagüez y toda la isla. 
-              <span className="block mt-2 font-bold text-green-600">Cotización 100% gratis en menos de 24 horas</span>
+              <span className="block mt-2 font-bold text-kilowatt-primary">Cotización 100% gratis en menos de 24 horas</span>
             </h2>
 
             {/* Main CTA */}
@@ -53,7 +55,7 @@ const HeroSection = () => {
               >
                 Cotiza Gratis Ahora
               </Button>
-              <p className="text-sm text-gray-600 mt-2">✓ Sin compromiso ✓ Respuesta garantizada en 24hrs ✓ Expertos locales</p>
+              <p className="text-sm text-white/90 mt-2">✓ Sin compromiso ✓ Respuesta garantizada en 24hrs ✓ Expertos locales</p>
             </div>
 
             {/* Value Props Icons - SEO Enhanced */}
@@ -103,8 +105,8 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-gray-600 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/80 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
