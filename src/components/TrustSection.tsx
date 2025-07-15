@@ -7,9 +7,9 @@ import necLogo from "@/assets/logos/nec-logo.png";
 import bbbLogo from "@/assets/logos/bbb-generated.png";
 import hudLogo from "@/assets/logos/hud-logo.png";
 import elNuevoDiaLogo from "@/assets/logos/el-nuevo-dia-logo.svg";
-import telemundoLogo from "@/assets/logos/telemundo-logo.png";
-import wapaLogo from "@/assets/logos/wapa-tv-logo.png";
-import primeraHoraLogo from "@/assets/logos/primera-hora-logo.png";
+import telemundoLogo from "@/assets/logos/telemundo-original-logo.svg";
+import wapaLogo from "@/assets/logos/wapa-tv-original-logo.png";
+import primeraHoraLogo from "@/assets/logos/primera-hora-original-logo.png";
 
 const TrustSection = () => {
   const certifications = [
