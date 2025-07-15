@@ -69,7 +69,7 @@ const TrustSection = () => {
             {certifications.map((cert, index) => (
               <div key={index} className="text-center glass p-4 rounded-xl hover:scale-105 transition-transform duration-300">
                 <div className="h-12 flex items-center justify-center mb-3">
-                  <img src={cert.logo} alt={cert.name} className="max-h-full max-w-full object-contain" />
+                  <img src={cert.logo} alt={`${cert.name} - Certificación placas solares Puerto Rico`} className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="text-sm font-medium text-gray-700">{cert.name}</div>
               </div>
@@ -84,7 +84,7 @@ const TrustSection = () => {
             {mediaLogos.map((media, index) => (
               <div key={index} className="text-center glass p-4 rounded-xl hover:scale-105 transition-transform duration-300">
                 <div className="h-12 flex items-center justify-center mb-3">
-                  <img src={media.logo} alt={media.name} className="max-h-full max-w-full object-contain" />
+                  <img src={media.logo} alt={`${media.name} - Kilowatt PR placas solares Puerto Rico`} className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="text-sm font-medium text-gray-700">{media.name}</div>
               </div>

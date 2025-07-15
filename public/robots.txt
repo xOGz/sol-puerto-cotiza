@@ -12,3 +12,12 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://kilowattpr.com/sitemap.xml
+
+# Crawl delay for non-priority bots
+User-agent: *
+Crawl-delay: 1

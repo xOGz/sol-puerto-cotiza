@@ -66,7 +66,7 @@ const WhatsAppButton = () => {
               onClick={handleWhatsAppClick}
               className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl font-medium transition-colors duration-300"
             >
-              Chatear ahora
+              💬 Solicita Cotización Gratis
             </button>
             
             <div className="flex items-center justify-center mt-3 text-xs text-gray-500">
@@ -84,7 +84,7 @@ const WhatsAppButton = () => {
           className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 animate-float"
         >
           <MessageCircle className="w-5 h-5" />
-          <span className="font-medium">WhatsApp</span>
+          <span className="font-medium">Cotización Gratis</span>
         </button>
       </div>
     </>

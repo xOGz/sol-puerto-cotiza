@@ -142,7 +142,7 @@ const Blog = () => {
                 <div className="relative">
                   <img 
                     src={post.image} 
-                    alt={post.title}
+                    alt={`${post.title} - Blog placas solares Puerto Rico`}
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute top-4 left-4">
@@ -180,11 +180,12 @@ const Blog = () => {
                     <span className="text-sm text-green-600 font-medium">
                       ⏱️ {post.readTime} lectura
                     </span>
-                    <Button 
+                     <Button 
                       variant="ghost" 
                       className="text-green-600 hover:text-green-700 hover:bg-green-50 p-2"
+                      onClick={() => window.location.href = `/#cotizacion`}
                     >
-                      Leer más <ArrowRight className="w-4 h-4 ml-1" />
+                      Cotizar Ahora <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>
                   </div>
                 </div>
