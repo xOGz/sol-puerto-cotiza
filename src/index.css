@@ -14,17 +14,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 45 100% 60%;
-    --primary-foreground: 237 69% 20%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 237 69% 15%;
 
-    --secondary: 217 91% 60%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 91% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 237 32% 96%;
-    --muted-foreground: 237 16% 47%;
+    --muted: 237 30% 90%;
+    --muted-foreground: 237 20% 40%;
 
-    --accent: 45 100% 60%;
-    --accent-foreground: 237 69% 20%;
+    --accent: 237 69% 15%;
+    --accent-foreground: 45 100% 55%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -45,11 +45,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Kilowatt PR Brand Colors */
-    --kilowatt-primary: 45 100% 60%;
-    --kilowatt-secondary: 217 91% 60%;
-    --kilowatt-accent: 45 100% 65%;
-    --kilowatt-gold: 45 100% 60%;
-    --kilowatt-blue: 217 91% 60%;
+    --kilowatt-primary: 45 100% 55%;
+    --kilowatt-secondary: 217 91% 65%;
+    --kilowatt-accent: 237 69% 15%;
+    --kilowatt-gold: 45 100% 55%;
+    --kilowatt-blue: 217 91% 65%;
   }
 
   .dark {
@@ -62,17 +62,17 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 45 93% 58%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 237 69% 15%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 91% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 237 30% 20%;
+    --muted-foreground: 237 20% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 237 69% 15%;
+    --accent-foreground: 45 100% 55%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -90,11 +90,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Kilowatt PR Brand Colors - Dark Mode */
-    --kilowatt-primary: 45 100% 60%;
-    --kilowatt-secondary: 217 91% 60%;
-    --kilowatt-accent: 45 100% 65%;
-    --kilowatt-gold: 45 100% 60%;
-    --kilowatt-blue: 217 91% 60%;
+    --kilowatt-primary: 45 100% 55%;
+    --kilowatt-secondary: 217 91% 65%;
+    --kilowatt-accent: 237 69% 15%;
+    --kilowatt-gold: 45 100% 55%;
+    --kilowatt-blue: 217 91% 65%;
   }
 }
 
