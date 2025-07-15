@@ -1,19 +1,29 @@
 
 import { Shield, Award, Users, Star } from "lucide-react";
 
+// Import logos
+import lumaLogo from "@/assets/logos/luma-energy-logo.svg";
+import necLogo from "@/assets/logos/nec-logo.png";
+import bbbLogo from "@/assets/logos/bbb-generated.png";
+import hudLogo from "@/assets/logos/hud-logo.png";
+import elNuevoDiaLogo from "@/assets/logos/el-nuevo-dia-logo.svg";
+import telemundoLogo from "@/assets/logos/telemundo-logo.png";
+import wapaLogo from "@/assets/logos/wapa-tv-logo.png";
+import primeraHoraLogo from "@/assets/logos/primera-hora-logo.png";
+
 const TrustSection = () => {
   const certifications = [
-    { name: "LUMA Energy", logo: "🔌" },
-    { name: "NEC Certified", logo: "⚡" },
-    { name: "CDBG Approved", logo: "🏛️" },
-    { name: "Better Business Bureau", logo: "🏆" }
+    { name: "LUMA Energy", logo: lumaLogo },
+    { name: "NEC Certified", logo: necLogo },
+    { name: "CDBG Approved", logo: hudLogo },
+    { name: "Better Business Bureau", logo: bbbLogo }
   ];
 
   const mediaLogos = [
-    { name: "El Nuevo Día", logo: "📰" },
-    { name: "Telemundo PR", logo: "📺" },
-    { name: "WAPA TV", logo: "📻" },
-    { name: "Primera Hora", logo: "📄" }
+    { name: "El Nuevo Día", logo: elNuevoDiaLogo },
+    { name: "Telemundo PR", logo: telemundoLogo },
+    { name: "WAPA TV", logo: wapaLogo },
+    { name: "Primera Hora", logo: primeraHoraLogo }
   ];
 
   return (
@@ -58,7 +68,9 @@ const TrustSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {certifications.map((cert, index) => (
               <div key={index} className="text-center glass p-4 rounded-xl hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl mb-2">{cert.logo}</div>
+                <div className="h-12 flex items-center justify-center mb-3">
+                  <img src={cert.logo} alt={cert.name} className="max-h-full max-w-full object-contain" />
+                </div>
                 <div className="text-sm font-medium text-gray-700">{cert.name}</div>
               </div>
             ))}
@@ -71,7 +83,9 @@ const TrustSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {mediaLogos.map((media, index) => (
               <div key={index} className="text-center glass p-4 rounded-xl hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl mb-2">{media.logo}</div>
+                <div className="h-12 flex items-center justify-center mb-3">
+                  <img src={media.logo} alt={media.name} className="max-h-full max-w-full object-contain" />
+                </div>
                 <div className="text-sm font-medium text-gray-700">{media.name}</div>
               </div>
             ))}
