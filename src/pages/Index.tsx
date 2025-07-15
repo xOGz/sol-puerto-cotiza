@@ -25,19 +25,33 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <TrustSection />
-      <TestimonialsSection />
-      <HowItWorksSection />
-      <FeatureGrid />
-      <CompanyMission />
-      <PricingSection />
-      <FAQSection />
-      <LeadCaptureSection />
-      <Footer />
-      <WhatsAppButton />
+    <div className="min-h-screen relative">
+      {/* Fixed Background Image for entire page */}
+      <div className="fixed inset-0 z-0">
+        <div 
+          className="w-full h-full bg-cover bg-center bg-no-repeat bg-fixed opacity-10"
+          style={{
+            backgroundImage: `url('/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png')`
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-50/80 via-yellow-50/80 to-white/80"></div>
+      </div>
+      
+      {/* Page Content */}
+      <div className="relative z-10">
+        <Navigation />
+        <HeroSection />
+        <TrustSection />
+        <TestimonialsSection />
+        <HowItWorksSection />
+        <FeatureGrid />
+        <CompanyMission />
+        <PricingSection />
+        <FAQSection />
+        <LeadCaptureSection />
+        <Footer />
+        <WhatsAppButton />
+      </div>
     </div>
   );
 };
