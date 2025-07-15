@@ -14,17 +14,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 45 93% 58%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 45 100% 60%;
+    --primary-foreground: 237 69% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 237 32% 96%;
+    --muted-foreground: 237 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 100% 60%;
+    --accent-foreground: 237 69% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -45,11 +45,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Kilowatt PR Brand Colors */
-    --kilowatt-primary: 45 93% 58%;
-    --kilowatt-secondary: 217 91% 59%;
-    --kilowatt-accent: 45 100% 70%;
-    --kilowatt-gold: 45 93% 58%;
-    --kilowatt-blue: 217 91% 59%;
+    --kilowatt-primary: 45 100% 60%;
+    --kilowatt-secondary: 217 91% 60%;
+    --kilowatt-accent: 45 100% 65%;
+    --kilowatt-gold: 45 100% 60%;
+    --kilowatt-blue: 217 91% 60%;
   }
 
   .dark {
@@ -90,11 +90,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Kilowatt PR Brand Colors - Dark Mode */
-    --kilowatt-primary: 45 93% 58%;
-    --kilowatt-secondary: 217 91% 59%;
-    --kilowatt-accent: 45 100% 70%;
-    --kilowatt-gold: 45 93% 58%;
-    --kilowatt-blue: 217 91% 59%;
+    --kilowatt-primary: 45 100% 60%;
+    --kilowatt-secondary: 217 91% 60%;
+    --kilowatt-accent: 45 100% 65%;
+    --kilowatt-gold: 45 100% 60%;
+    --kilowatt-blue: 217 91% 60%;
   }
 }
 

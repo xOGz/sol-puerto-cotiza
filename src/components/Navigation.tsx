@@ -47,7 +47,7 @@ const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/35a5cb3f-1dc6-4637-a191-795956768438.png" 
+                src="/lovable-uploads/e587b970-e5ac-441c-adc6-77af9d7caab7.png" 
                 alt="Kilowatt PR LLC Logo - Placas Solares Puerto Rico" 
                 className="w-10 h-10 object-contain"
               />
