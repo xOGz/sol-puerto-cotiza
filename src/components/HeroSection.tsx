@@ -16,9 +16,16 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Additional gradient overlay for hero section */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-green-50/60 via-yellow-50/60 to-white/60"></div>
+      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="w-full h-full bg-cover bg-center bg-no-repeat opacity-20"
+            style={{
+              backgroundImage: `url('/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png')`
+            }}
+          />
+        </div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
