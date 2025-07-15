@@ -9,7 +9,7 @@ const GoogleReviews = () => {
       text: "Excelente servicio! Instalaron mis placas solares en Aguada y ahora pago $50 menos al mes. El equipo fue muy profesional y terminaron en 2 días.",
       location: "Aguada, PR",
       date: "2024-03-10",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b5b04e96?w=40&h=40&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=40&h=40&fit=crop&crop=face"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const GoogleReviews = () => {
       text: "Increíble ahorro! Mis placas solares han reducido mi factura de luz en un 85%. Kilowatt PR hizo todo el proceso súper fácil y rápido.",
       location: "Mayagüez, PR",
       date: "2024-03-05",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const GoogleReviews = () => {
       text: "Recomiendo 100% a Kilowatt PR. Sellaron mi techo y luego instalaron las placas solares. El trabajo fue impecable y con garantía de 25 años.",
       location: "San Juan, PR",
       date: "2024-02-28",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1619895862022-09114b41f16f?w=40&h=40&fit=crop&crop=face"
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const GoogleReviews = () => {
       text: "Después del huracán, decidí instalar placas solares con batería. Kilowatt PR me ayudó con todo el proceso y ahora tengo energía 24/7.",
       location: "Ponce, PR",
       date: "2024-02-20",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=40&h=40&fit=crop&crop=face"
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ const GoogleReviews = () => {
       text: "¡Fantástico! Mi sistema solar ya se pagó solo en 3 años. El equipo de Kilowatt PR es súper profesional y el servicio post-instalación es excelente.",
       location: "Caguas, PR",
       date: "2024-02-15",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=40&h=40&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1574015974293-817f0ebebb74?w=40&h=40&fit=crop&crop=face"
     }
   ];
 
