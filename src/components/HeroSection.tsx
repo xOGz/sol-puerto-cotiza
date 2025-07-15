@@ -35,7 +35,7 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="block">Placas Solares</span>
               <span className="block">Puerto Rico</span>
-              <span className="block bg-gradient-to-r from-green-500 to-yellow-500 bg-clip-text text-transparent">Ahorra 90%</span>
+              <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">Ahorra 90%</span>
             </h1>
 
             {/* Subheadline - Long tail keywords */}
@@ -49,7 +49,7 @@ const HeroSection = () => {
               <Button 
                 onClick={scrollToQuote}
                 size="lg"
-                className="bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
+                className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
               >
                 Cotiza Gratis Ahora
               </Button>
@@ -59,22 +59,22 @@ const HeroSection = () => {
             {/* Value Props Icons - SEO Enhanced */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <Award className="w-8 h-8 text-green-500 mx-auto mb-3" />
+                <Award className="w-8 h-8 text-kilowatt-primary mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">25 años</div>
                 <div className="text-gray-700 text-sm">Garantía placas</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
+                <CheckCircle className="w-8 h-8 text-kilowatt-secondary mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Instalación</div>
                 <div className="text-gray-700 text-sm">Profesional</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <Users className="w-8 h-8 text-green-500 mx-auto mb-3" />
+                <Users className="w-8 h-8 text-kilowatt-primary mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Sellado</div>
                 <div className="text-gray-700 text-sm">De techo</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
+                <CheckCircle className="w-8 h-8 text-kilowatt-secondary mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Lavado</div>
                 <div className="text-gray-700 text-sm">De placas</div>
               </div>

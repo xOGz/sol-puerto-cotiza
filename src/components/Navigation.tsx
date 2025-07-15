@@ -76,7 +76,7 @@ const Navigation = () => {
               </a>
               <Button 
                 onClick={scrollToQuote}
-                className="bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
+                className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 Cotización Gratis
               </Button>
@@ -125,7 +125,7 @@ const Navigation = () => {
                 </a>
                 <Button 
                   onClick={scrollToQuote}
-                  className="w-full bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white py-3 rounded-full font-bold"
+                  className="w-full bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white py-3 rounded-full font-bold"
                 >
                   Cotización Gratis
                 </Button>

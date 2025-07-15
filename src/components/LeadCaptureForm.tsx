@@ -219,7 +219,7 @@ const LeadCaptureForm = () => {
         <Button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white py-6 rounded-xl font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
+          className="w-full bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white py-6 rounded-xl font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
         >
           {isSubmitting ? "Enviando cotización..." : "📞 Obtén tu cotización GRATIS"}
         </Button>
