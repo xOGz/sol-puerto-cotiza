@@ -71,7 +71,7 @@ const HeroSection = () => {
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <Users className="w-8 h-8 text-green-500 mx-auto mb-3" />
                 <div className="text-lg font-bold text-gray-900 mb-1">Sellado</div>
-                <div className="text-gray-700 text-sm">De techo incluido</div>
+                <div className="text-gray-700 text-sm">De techo</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <CheckCircle className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
