@@ -5,19 +5,19 @@ const HowItWorksSection = () => {
   const steps = [
     {
       icon: ClipboardCheck,
-      title: "Solicita tu inspección gratis",
+      title: "SOLICITA TU INSPECCIÓN GRATIS",
       description: "Nuestros expertos evalúan tu techo y consumo eléctrico para diseñar el sistema perfecto para tu hogar.",
       step: "01"
     },
     {
       icon: PenTool,
-      title: "Diseñamos tu sistema ideal",
+      title: "DISEÑAMOS TU SISTEMA IDEAL",
       description: "Creamos un diseño personalizado que maximiza tu ahorro y se adapta perfectamente a tu techo y necesidades.",
       step: "02"
     },
     {
       icon: Zap,
-      title: "Instalamos y conectamos con LUMA",
+      title: "INSTALAMOS Y CONECTAMOS CON LUMA",
       description: "Nuestro equipo certificado instala tu sistema y maneja todos los permisos y conexiones con LUMA Energy.",
       step: "03"
     }
@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Cómo funciona nuestro proceso
+            CÓMO FUNCIONA NUESTRO PROCESO
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             En solo 3 pasos simples, tu hogar estará generando energía solar limpia y ahorrando dinero
@@ -67,7 +67,7 @@ const HowItWorksSection = () => {
         <div className="text-center mt-16 animate-fade-in-up">
           <div className="glass p-8 rounded-3xl max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              ¿Listo para comenzar tu transformación solar?
+              ¿LISTO PARA COMENZAR TU TRANSFORMACIÓN SOLAR?
             </h3>
             <p className="text-gray-600 mb-6">
               El proceso completo toma entre 4-6 semanas desde la inspección hasta que empiezas a generar tu propia energía.
