@@ -50,6 +50,9 @@
     --kilowatt-accent: 237 69% 15%;
     --kilowatt-gold: 45 100% 55%;
     --kilowatt-blue: 217 91% 65%;
+    
+    /* WhatsApp Brand Color */
+    --whatsapp-green: 142 70% 49%;
   }
 
   .dark {
@@ -95,6 +98,9 @@
     --kilowatt-accent: 237 69% 15%;
     --kilowatt-gold: 45 100% 55%;
     --kilowatt-blue: 217 91% 65%;
+    
+    /* WhatsApp Brand Color */
+    --whatsapp-green: 142 70% 49%;
   }
 }
 

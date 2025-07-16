@@ -72,6 +72,8 @@ export default {
 				'kilowatt-accent': 'hsl(var(--kilowatt-accent))',
 				'kilowatt-gold': 'hsl(var(--kilowatt-gold))',
 				'kilowatt-blue': 'hsl(var(--kilowatt-blue))',
+				// WhatsApp Brand Color
+				'whatsapp-green': 'hsl(var(--whatsapp-green))',
 				// Legacy solar/ocean colors for backward compatibility
 				solar: {
 					50: '#fefce8',

@@ -81,10 +81,10 @@ const WhatsAppButton = () => {
       <div className="hidden md:block fixed bottom-6 right-6 z-50">
         <button
           onClick={handleWhatsAppClick}
-          className="bg-kilowatt-secondary hover:bg-kilowatt-secondary/90 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 animate-float"
+          className="bg-whatsapp-green hover:bg-whatsapp-green/90 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 animate-float"
         >
           <MessageCircle className="w-5 h-5" />
-          <span className="font-medium">Cotización Gratis</span>
+          <span className="font-medium">WhatsApp</span>
         </button>
       </div>
     </>
