@@ -65,16 +65,16 @@ const FeatureGrid = () => {
         {/* Additional Benefits */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <div className="text-3xl font-bold text-solar-500 mb-2">0%</div>
-            <div className="text-gray-600">Interés inicial disponible</div>
+            <div className="text-3xl font-bold text-solar-500 mb-2">10+</div>
+            <div className="text-gray-600">Años de experiencia</div>
           </div>
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <div className="text-3xl font-bold text-solar-500 mb-2">24/7</div>
-            <div className="text-gray-600">Monitoreo y soporte</div>
+            <div className="text-3xl font-bold text-solar-500 mb-2">500+</div>
+            <div className="text-gray-600">Instalaciones completadas</div>
           </div>
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <div className="text-3xl font-bold text-solar-500 mb-2">100%</div>
-            <div className="text-gray-600">Satisfacción garantizada</div>
+            <div className="text-3xl font-bold text-solar-500 mb-2">3-5</div>
+            <div className="text-gray-600">Años para ROI completo</div>
           </div>
         </div>
       </div>
