@@ -142,27 +142,27 @@ const PricingSection = () => {
                 {/* Popular Badge */}
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg">
+                    <div className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg">
                       Más Popular
                     </div>
                   </div>
                 )}
                 
                 <div className={`glass p-6 rounded-2xl h-full flex flex-col ${
-                  pkg.popular ? 'border-2 border-green-200 shadow-xl transform scale-105' : 'border border-gray-200'
+                  pkg.popular ? 'border-2 border-kilowatt-primary/30 shadow-xl transform scale-105' : 'border border-gray-200'
                 } transition-all duration-300 hover:shadow-lg`}>
                   
                   {/* Header with Icon */}
                   <div className="text-center mb-6">
-                    <div className="mx-auto w-12 h-12 bg-gradient-to-br from-green-100 to-blue-100 rounded-xl flex items-center justify-center mb-3">
-                      <IconComponent className="w-6 h-6 text-green-600" />
+                    <div className="mx-auto w-12 h-12 bg-gradient-to-br from-kilowatt-primary/20 to-kilowatt-secondary/20 rounded-xl flex items-center justify-center mb-3">
+                      <IconComponent className="w-6 h-6 text-kilowatt-primary" />
                     </div>
-                    <div className="text-xs font-medium text-blue-600 uppercase tracking-wide mb-2">
+                    <div className="text-xs font-medium text-kilowatt-secondary uppercase tracking-wide mb-2">
                       {pkg.category}
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2 leading-tight">{pkg.name}</h3>
                     <p className="text-sm text-gray-600 mb-3">{pkg.subtitle}</p>
-                    <div className="text-2xl font-bold text-green-600 mb-2">{pkg.price}</div>
+                    <div className="text-2xl font-bold text-kilowatt-primary mb-2">{pkg.price}</div>
                     <div className="text-xs text-gray-500 mb-1">{pkg.ideal}</div>
                   </div>
 
@@ -170,7 +170,7 @@ const PricingSection = () => {
                   <div className="space-y-2 mb-6 flex-grow">
                     {pkg.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start text-sm">
-                        <Check className="w-4 h-4 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 text-kilowatt-primary mr-2 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700 leading-tight">{feature}</span>
                       </div>
                     ))}
@@ -193,8 +193,8 @@ const PricingSection = () => {
                     onClick={scrollToQuote}
                     className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 text-sm ${
                       pkg.popular
-                        ? 'bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg'
-                        : 'bg-white border-2 border-green-200 text-green-700 hover:bg-green-50 hover:border-green-300'
+                        ? 'bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white shadow-lg'
+                        : 'bg-white border-2 border-kilowatt-primary/30 text-kilowatt-primary hover:bg-kilowatt-primary/5 hover:border-kilowatt-primary/50'
                     }`}
                   >
                     Cotiza Gratis
@@ -214,19 +214,19 @@ const PricingSection = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <Check className="w-5 h-5 text-kilowatt-primary mr-3 flex-shrink-0" />
                 <span className="text-gray-700">Monitoreo incluido en todos los sistemas</span>
               </div>
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <Check className="w-5 h-5 text-kilowatt-primary mr-3 flex-shrink-0" />
                 <span className="text-gray-700">Lavado de placas gratis el primer año</span>
               </div>
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <Check className="w-5 h-5 text-kilowatt-primary mr-3 flex-shrink-0" />
                 <span className="text-gray-700">Instalación por personal certificado</span>
               </div>
               <div className="flex items-center">
-                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                <Check className="w-5 h-5 text-kilowatt-primary mr-3 flex-shrink-0" />
                 <span className="text-gray-700">Garantías reales y claras en tienda local</span>
               </div>
             </div>
@@ -245,22 +245,22 @@ const PricingSection = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-4">
               <div className="flex items-center justify-center">
-                <Check className="w-4 h-4 text-green-500 mr-2" />
+                <Check className="w-4 h-4 text-kilowatt-primary mr-2" />
                 <span>Consulta gratuita</span>
               </div>
               <div className="flex items-center justify-center">
-                <Check className="w-4 h-4 text-green-500 mr-2" />
+                <Check className="w-4 h-4 text-kilowatt-primary mr-2" />
                 <span>Sin compromiso</span>
               </div>
               <div className="flex items-center justify-center">
-                <Check className="w-4 h-4 text-green-500 mr-2" />
+                <Check className="w-4 h-4 text-kilowatt-primary mr-2" />
                 <span>Respuesta en 24h</span>
               </div>
             </div>
             
             <Button 
               onClick={scrollToQuote}
-              className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg"
+              className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white px-8 py-3 rounded-xl font-semibold shadow-lg"
             >
               Solicitar Evaluación Gratuita
             </Button>
