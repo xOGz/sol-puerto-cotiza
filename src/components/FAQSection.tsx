@@ -68,10 +68,10 @@ const FAQSection = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-gradient-to-r from-green-50 to-yellow-50 border-0 rounded-2xl px-6 shadow-md animate-fade-in-up"
+                className="bg-gradient-to-r from-kilowatt-primary/10 to-kilowatt-secondary/10 border-0 rounded-2xl px-6 shadow-md animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <AccordionTrigger className="text-left font-bold text-gray-900 hover:text-green-600 transition-colors py-6">
+                <AccordionTrigger className="text-left font-bold text-gray-900 hover:text-kilowatt-primary transition-colors py-6">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-700 leading-relaxed pt-2 pb-6">
@@ -94,7 +94,7 @@ const FAQSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={scrollToQuote}
-                className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform duration-300"
+                className="bg-white text-kilowatt-primary hover:bg-gray-100 px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform duration-300"
               >
                 🔥 Cotización Gratis en 24hrs
               </Button>
@@ -102,7 +102,7 @@ const FAQSection = () => {
                 href="https://wa.me/17874312275?text=Hola,%20quiero%20información%20sobre%20placas%20solares%20para%20mi%20casa%20en%20Puerto%20Rico" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-bold hover:scale-105 transition-transform duration-300"
+                className="inline-flex items-center justify-center px-8 py-3 bg-kilowatt-secondary hover:bg-kilowatt-secondary/90 text-white rounded-full font-bold hover:scale-105 transition-transform duration-300"
               >
                 💬 WhatsApp Directo
               </a>

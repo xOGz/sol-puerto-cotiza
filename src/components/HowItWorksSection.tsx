@@ -74,15 +74,15 @@ const HowItWorksSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="flex items-center justify-center">
-                <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                <div className="w-3 h-3 bg-kilowatt-primary rounded-full mr-3"></div>
                 <span className="text-sm text-gray-600">Sin costos ocultos</span>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                <div className="w-3 h-3 bg-kilowatt-primary rounded-full mr-3"></div>
                 <span className="text-sm text-gray-600">Garantía completa</span>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                <div className="w-3 h-3 bg-kilowatt-primary rounded-full mr-3"></div>
                 <span className="text-sm text-gray-600">Instalación profesional</span>
               </div>
             </div>

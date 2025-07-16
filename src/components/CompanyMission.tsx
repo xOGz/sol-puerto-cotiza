@@ -28,7 +28,7 @@ const CompanyMission = () => {
             </div>
             
             <div className="glass p-8 rounded-3xl animate-fade-in-up">
-              <Leaf className="w-12 h-12 text-green-500 mb-4" />
+              <Leaf className="w-12 h-12 text-kilowatt-secondary mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-4">Cuidado del medio ambiente</h3>
               <p className="text-gray-600 leading-relaxed">
                 Cada instalación solar que realizamos contribuye a reducir las emisiones de carbono 
@@ -49,7 +49,7 @@ const CompanyMission = () => {
               </div>
               
               <div>
-                <div className="text-4xl font-bold text-green-500 mb-2">$850K</div>
+                <div className="text-4xl font-bold text-kilowatt-primary mb-2">$850K</div>
                 <div className="text-gray-600">Ahorrados por nuestros clientes</div>
                 <div className="text-sm text-gray-500 mt-2">En facturas eléctricas este año</div>
               </div>

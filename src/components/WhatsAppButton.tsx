@@ -34,7 +34,7 @@ const WhatsAppButton = () => {
       <div className="fixed bottom-6 right-6 z-50 md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 animate-float"
+          className="w-14 h-14 bg-kilowatt-secondary hover:bg-kilowatt-secondary/90 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 animate-float"
         >
           {isOpen ? (
             <X className="w-6 h-6 text-white" />
@@ -49,7 +49,7 @@ const WhatsAppButton = () => {
         <div className="fixed bottom-24 right-6 z-50 w-80 md:hidden">
           <div className="glass bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-gray-200">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-3">
+              <div className="w-12 h-12 bg-kilowatt-secondary rounded-full flex items-center justify-center mr-3">
                 <MessageCircle className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -64,13 +64,13 @@ const WhatsAppButton = () => {
             
             <button
               onClick={handleWhatsAppClick}
-              className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl font-medium transition-colors duration-300"
+              className="w-full bg-kilowatt-secondary hover:bg-kilowatt-secondary/90 text-white py-3 rounded-xl font-medium transition-colors duration-300"
             >
               💬 Solicita Cotización Gratis
             </button>
             
             <div className="flex items-center justify-center mt-3 text-xs text-gray-500">
-              <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+              <div className="w-2 h-2 bg-kilowatt-secondary rounded-full mr-2 animate-pulse"></div>
               En línea ahora
             </div>
           </div>
@@ -81,7 +81,7 @@ const WhatsAppButton = () => {
       <div className="hidden md:block fixed bottom-6 right-6 z-50">
         <button
           onClick={handleWhatsAppClick}
-          className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 animate-float"
+          className="bg-kilowatt-secondary hover:bg-kilowatt-secondary/90 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 animate-float"
         >
           <MessageCircle className="w-5 h-5" />
           <span className="font-medium">Cotización Gratis</span>

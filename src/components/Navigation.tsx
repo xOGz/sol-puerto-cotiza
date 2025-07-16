@@ -58,19 +58,19 @@ const Navigation = () => {
             <div className="hidden md:flex items-center space-x-6">
               <button
                 onClick={() => scrollToSection('#testimonios')}
-                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
               >
                 Testimonios
               </button>
               <Link
                 to="/blog"
-                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
               >
                 Blog Solar
               </Link>
               <a
                 href="tel:+17874312275"
-                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
               >
                 (787) 431-2275
               </a>
@@ -106,20 +106,20 @@ const Navigation = () => {
               <div className="space-y-6">
                 <button
                   onClick={() => scrollToSection('#testimonios')}
-                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
                 >
                   Testimonios
                 </button>
                 <Link
                   to="/blog"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
                 >
                   Blog Solar
                 </Link>
                 <a
                   href="tel:+17874312275"
-                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-green-600 transition-colors"
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
                 >
                   Llamar: (787) 431-2275
                 </a>

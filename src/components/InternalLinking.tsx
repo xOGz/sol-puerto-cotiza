@@ -63,7 +63,7 @@ const InternalLinking = () => {
               {link.type === "page" ? (
                 <Link
                   to={link.href}
-                  className="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm"
+                  className="inline-flex items-center text-kilowatt-primary hover:text-kilowatt-primary/80 font-medium text-sm"
                 >
                   Leer más
                   <ArrowRight className="w-4 h-4 ml-1" />
@@ -71,7 +71,7 @@ const InternalLinking = () => {
               ) : (
                 <button
                   onClick={() => scrollToSection(link.href)}
-                  className="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-sm"
+                  className="inline-flex items-center text-kilowatt-primary hover:text-kilowatt-primary/80 font-medium text-sm"
                 >
                   Ver más
                   <ArrowRight className="w-4 h-4 ml-1" />
@@ -90,35 +90,35 @@ const InternalLinking = () => {
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <button 
                 onClick={() => scrollToSection('#servicios')}
-                className="text-green-600 hover:text-green-700 hover:underline"
+                className="text-kilowatt-primary hover:text-kilowatt-primary/80 hover:underline"
               >
                 Instalación de Placas Solares
               </button>
               <span className="text-gray-400">•</span>
               <button 
                 onClick={() => scrollToSection('#servicios')}
-                className="text-green-600 hover:text-green-700 hover:underline"
+                className="text-kilowatt-primary hover:text-kilowatt-primary/80 hover:underline"
               >
                 Sistemas Solares con Batería
               </button>
               <span className="text-gray-400">•</span>
               <button 
                 onClick={() => scrollToSection('#servicios')}
-                className="text-green-600 hover:text-green-700 hover:underline"
+                className="text-kilowatt-primary hover:text-kilowatt-primary/80 hover:underline"
               >
                 Sellado de Techo
               </button>
               <span className="text-gray-400">•</span>
               <button 
                 onClick={() => scrollToSection('#servicios')}
-                className="text-green-600 hover:text-green-700 hover:underline"
+                className="text-kilowatt-primary hover:text-kilowatt-primary/80 hover:underline"
               >
                 Lavado de Placas Solares
               </button>
               <span className="text-gray-400">•</span>
               <button 
                 onClick={() => scrollToSection('#servicios')}
-                className="text-green-600 hover:text-green-700 hover:underline"
+                className="text-kilowatt-primary hover:text-kilowatt-primary/80 hover:underline"
               >
                 Mantenimiento Solar
               </button>

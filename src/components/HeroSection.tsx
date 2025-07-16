@@ -42,7 +42,7 @@ const HeroSection = () => {
             {/* Subheadline - Long tail keywords */}
             <h2 className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
               Instalación profesional de <strong>placas solares y baterías lítio</strong> en toda la isla. 
-              <span className="block mt-2 font-bold text-green-400">Cotización 100% gratis en menos de 24 horas</span>
+              <span className="block mt-2 font-bold text-kilowatt-primary">Cotización 100% gratis en menos de 24 horas</span>
             </h2>
 
             {/* Main CTA */}

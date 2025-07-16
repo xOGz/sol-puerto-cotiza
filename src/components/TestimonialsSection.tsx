@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonios" className="section-spacing bg-gradient-to-br from-green-50 to-yellow-50">
+    <section id="testimonios" className="section-spacing bg-gradient-to-br from-kilowatt-primary/10 to-kilowatt-secondary/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
               <img 
                 src={testimonials[currentTestimonial].image} 
                 alt={testimonials[currentTestimonial].name}
-                className="w-16 h-16 rounded-full mr-4 object-cover border-4 border-yellow-200"
+                className="w-16 h-16 rounded-full mr-4 object-cover border-4 border-kilowatt-primary/30"
               />
               <div className="text-left">
                 <div className="font-bold text-gray-900 text-lg">{testimonials[currentTestimonial].name}</div>
@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
               <div className="text-4xl text-gray-400">→</div>
               <div className="text-center">
                 <div className="text-sm text-gray-600">Ahora</div>
-                <div className="text-2xl font-bold text-green-500">{testimonials[currentTestimonial].currentBill}</div>
+                <div className="text-2xl font-bold text-kilowatt-primary">{testimonials[currentTestimonial].currentBill}</div>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const TestimonialsSection = () => {
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentTestimonial ? 'bg-yellow-500' : 'bg-gray-300'
+                  index === currentTestimonial ? 'bg-kilowatt-primary' : 'bg-gray-300'
                 }`}
               />
             ))}

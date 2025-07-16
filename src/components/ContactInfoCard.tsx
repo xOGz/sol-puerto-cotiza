@@ -38,7 +38,7 @@ const ContactInfoCard = () => {
         </div>
 
         <div className="flex items-center">
-          <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-kilowatt-primary to-kilowatt-secondary rounded-xl flex items-center justify-center mr-4">
             <MapPin className="w-6 h-6 text-white" />
           </div>
           <div>

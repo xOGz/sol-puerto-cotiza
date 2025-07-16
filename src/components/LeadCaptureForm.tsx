@@ -90,18 +90,18 @@ const LeadCaptureForm = () => {
   };
 
   return (
-    <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl animate-fade-in-up border-4 border-green-200">
+    <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl animate-fade-in-up border-4 border-kilowatt-primary/20">
       {/* Trust indicators */}
       <div className="flex justify-center items-center gap-6 mb-6">
-        <div className="flex items-center text-green-600">
+        <div className="flex items-center text-kilowatt-primary">
           <Shield className="w-5 h-5 mr-2" />
           <span className="text-sm font-medium">100% Seguro</span>
         </div>
-        <div className="flex items-center text-green-600">
+        <div className="flex items-center text-kilowatt-primary">
           <Clock className="w-5 h-5 mr-2" />
           <span className="text-sm font-medium">Respuesta en 2hrs</span>
         </div>
-        <div className="flex items-center text-green-600">
+        <div className="flex items-center text-kilowatt-primary">
           <CheckCircle className="w-5 h-5 mr-2" />
           <span className="text-sm font-medium">Sin compromiso</span>
         </div>
@@ -127,7 +127,7 @@ const LeadCaptureForm = () => {
             required
             value={formData.nombre}
             onChange={(e) => setFormData(prev => ({ ...prev, nombre: e.target.value }))}
-            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-green-500"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-kilowatt-primary"
             placeholder="Ej: Juan Pérez Rivera"
           />
         </div>
@@ -142,7 +142,7 @@ const LeadCaptureForm = () => {
             required
             value={formData.telefono}
             onChange={(e) => setFormData(prev => ({ ...prev, telefono: e.target.value }))}
-            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-green-500"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-kilowatt-primary"
             placeholder="Ej: (787) 555-0123"
           />
         </div>
@@ -157,7 +157,7 @@ const LeadCaptureForm = () => {
             required
             value={formData.email}
             onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-green-500"
+            className="w-full h-12 text-lg border-2 border-gray-300 focus:border-kilowatt-primary"
             placeholder="Ej: juan@email.com"
           />
         </div>
@@ -167,7 +167,7 @@ const LeadCaptureForm = () => {
             Pueblo/Municipio *
           </label>
           <Select onValueChange={(value) => setFormData(prev => ({ ...prev, municipio: value }))}>
-            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-green-500">
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-kilowatt-primary">
               <SelectValue placeholder="Selecciona tu pueblo" />
             </SelectTrigger>
             <SelectContent className="bg-white z-50 max-h-60">
@@ -185,7 +185,7 @@ const LeadCaptureForm = () => {
             Tipo de propiedad *
           </label>
           <Select onValueChange={(value) => setFormData(prev => ({ ...prev, tipoPropiedad: value }))}>
-            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-green-500">
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-kilowatt-primary">
               <SelectValue placeholder="Selecciona tipo de propiedad" />
             </SelectTrigger>
             <SelectContent className="bg-white z-50">
@@ -203,7 +203,7 @@ const LeadCaptureForm = () => {
             ¿Cuánto pagas de luz al mes? *
           </label>
           <Select onValueChange={(value) => setFormData(prev => ({ ...prev, consumo: value }))}>
-            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-green-500">
+            <SelectTrigger className="w-full h-12 text-lg border-2 border-gray-300 focus:border-kilowatt-primary">
               <SelectValue placeholder="Selecciona tu rango" />
             </SelectTrigger>
             <SelectContent className="bg-white z-50">

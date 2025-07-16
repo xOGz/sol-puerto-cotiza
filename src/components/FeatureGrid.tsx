@@ -13,7 +13,7 @@ const FeatureGrid = () => {
       icon: Smartphone,
       title: "Monitoreo desde tu celular",
       description: "Ve tu producción de energía en tiempo real desde cualquier lugar",
-      color: "from-green-500 to-green-600"
+      color: "from-kilowatt-primary to-kilowatt-secondary"
     },
     {
       icon: Clock,
