@@ -23,7 +23,7 @@ const FAQSection = () => {
     },
     {
       question: "¿Funcionan las placas solares durante apagones de LUMA Energy?",
-      answer: "Con nuestros sistemas solares con batería de respaldo (Tesla Powerwall, Enphase, LG Chem), tendrás electricidad durante los apagones de LUMA. Las placas cargan las baterías durante el día y puedes usar esa energía cuando se va la luz. Es como tener tu propia planta eléctrica personal las 24 horas."
+      answer: "Con nuestros sistemas solares con batería de respaldo (baterías e inversor), tendrás electricidad durante los apagones de LUMA. Las placas cargan las baterías durante el día y puedes usar esa energía cuando se va la luz. Es como tener tu propia planta eléctrica personal las 24 horas."
     },
     {
       question: "¿Qué incluye la cotización gratuita de placas solares?",
@@ -35,7 +35,7 @@ const FAQSection = () => {
     },
     {
       question: "¿Qué garantías ofrecen en las placas solares?",
-      answer: "Ofrecemos garantías líderes en la industria: 25 años en paneles solares (producción), 25 años en microinversores Enphase, 10 años en baterías Tesla/LG, 2 años en mano de obra e instalación, y 2 años en sellado de techo. Además, monitoreo 24/7 del sistema y servicio técnico local en Puerto Rico."
+      answer: "Ofrecemos garantías líderes en la industria: 25 años en paneles solares (producción), 25 años en microinversores Enphase, 10 años en baterías e inversor, 1 mes de garantía en instalación, y 2 años en sellado de techo. Además, monitoreo 24/7 del sistema y servicio técnico local en Puerto Rico."
     },
     {
       question: "¿Aumentan las placas solares el valor de mi casa en Puerto Rico?",
