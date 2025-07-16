@@ -37,7 +37,7 @@ const PricingSection = () => {
         "Garantía 25 años en paneles",
         "Garantía 10 años en inversor y batería",
         "Monitoreo avanzado",
-        "Permisos LUMA incluidos",
+        "Monitoreo avanzado",
         "Energía durante apagones",
         "Lavado de placas gratis el primer año"
       ],
@@ -59,7 +59,7 @@ const PricingSection = () => {
         "Ideal para casas con alto consumo y aires acondicionados",
         "Garantías completas (paneles, inversor, batería)",
         "Monitoreo avanzado",
-        "Permisos LUMA incluidos",
+        "Monitoreo avanzado",
         "Lavado de placas gratis el primer año"
       ],
       limitations: [],

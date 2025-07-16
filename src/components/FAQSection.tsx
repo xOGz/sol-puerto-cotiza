@@ -27,11 +27,11 @@ const FAQSection = () => {
     },
     {
       question: "¿Qué incluye la cotización gratuita de placas solares?",
-      answer: "Nuestra cotización 100% gratuita incluye: evaluación completa de tu consumo eléctrico, diseño 3D personalizado del sistema, cálculo exacto de ahorros proyectados a 25 años, análisis del techo y recomendaciones de sell lado si es necesario, estimado de instalación, trámites de permisos con LUMA y municipio, opciones de financiamiento, y seguimiento personalizado. Sin letra pequeña ni costos ocultos."
+      answer: "Nuestra cotización 100% gratuita incluye: evaluación completa de tu consumo eléctrico, diseño 3D personalizado del sistema, cálculo exacto de ahorros proyectados a 25 años, análisis del techo y recomendaciones de sellado si es necesario, estimado de instalación, opciones de financiamiento, y seguimiento personalizado. Sin letra pequeña ni costos ocultos."
     },
     {
       question: "¿Cuánto tiempo toma instalar placas solares en Puerto Rico?",
-      answer: "El proceso completo desde la firma del contrato hasta que tu sistema está produciendo energía limpia toma 6-10 semanas. Esto incluye: permisos de LUMA Energy (2-3 semanas), permisos municipales (1-2 semanas), instalación física (1-2 días), inspecciones (1 semana), y conexión final. La instalación en tu techo, incluyendo sellado, toma solo 1-2 días con nuestro equipo certificado."
+      answer: "El proceso completo desde la firma del contrato hasta que tu sistema está produciendo energía limpia toma 6-10 semanas. Esto incluye: instalación física (1-2 días), inspecciones (1 semana), y conexión final. La instalación en tu techo, incluyendo sellado, toma solo 1-2 días con nuestro equipo certificado."
     },
     {
       question: "¿Qué garantías ofrecen en las placas solares?",
