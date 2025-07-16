@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Import testimonial images
+import womanLaptop from "@/assets/testimonials/woman-laptop.jpg";
+import womanWhiteShirt from "@/assets/testimonials/woman-white-shirt.jpg";
+import manCheckeredShirt from "@/assets/testimonials/man-checkered-shirt.jpg";
+import peopleLaptops from "@/assets/testimonials/people-laptops.jpg";
+
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
@@ -9,7 +15,7 @@ const TestimonialsSection = () => {
     {
       name: "Juan R. Pérez",
       location: "Mayagüez, PR",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      image: manCheckeredShirt,
       previousBill: "$280",
       currentBill: "$15",
       text: "Antes pagaba $280 mensual de luz. Ahora solo pago $15. Los muchachos de Kilowatt PR hicieron un trabajo excelente y me explicaron todo paso a paso.",
@@ -18,7 +24,7 @@ const TestimonialsSection = () => {
     {
       name: "Carmen M. Rivera",
       location: "Caguas, PR",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      image: womanWhiteShirt,
       previousBill: "$350",
       currentBill: "$22",
       text: "Mi factura bajó de $350 a solo $22 al mes. Durante el huracán Fiona tuvimos luz cuando todo el barrio estaba a oscuras. Súper recomendado.",
@@ -27,7 +33,7 @@ const TestimonialsSection = () => {
     {
       name: "Miguel A. Santos",
       location: "Bayamón, PR",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      image: peopleLaptops,
       previousBill: "$195",
       currentBill: "$8",
       text: "El sistema fue instalado rapidísimo y profesional. Ahorro más de lo que esperaba cada mes. La instalación fue rápida y profesional.",
@@ -36,7 +42,7 @@ const TestimonialsSection = () => {
     {
       name: "Ana L. Morales",
       location: "Ponce, PR",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      image: womanLaptop,
       previousBill: "$420",
       currentBill: "$35",
       text: "Tengo un negocio en casa y mi factura era altísima. Ahora ahorro más de $380 al mes. Kilowatt PR cumplió todo lo que prometieron.",
