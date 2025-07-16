@@ -16,7 +16,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white">
+      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white pt-20">
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0">
           <div 
