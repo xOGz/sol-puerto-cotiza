@@ -11,7 +11,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "¿Cuánto cuestan las placas solares en Puerto Rico?",
-      answer: "El costo promedio de un sistema solar residencial en Puerto Rico varía entre $15,000-$35,000 antes de incentivos. Con los créditos federales y locales, el costo neto puede reducirse significativamente. Ofrecemos planes de financiamiento desde $0 inicial. Nuestra cotización gratuita incluye un análisis detallado de costos y ahorros proyectados específico para tu hogar."
+      answer: "El costo promedio de un sistema solar residencial en Puerto Rico varía entre $15,000-$35,000. Nuestra cotización gratuita incluye un análisis detallado de costos y ahorros proyectados específico para tu hogar."
     },
     {
       question: "¿Qué incluye el sellado de techo con la instalación de placas solares?",
@@ -27,7 +27,7 @@ const FAQSection = () => {
     },
     {
       question: "¿Qué incluye la cotización gratuita de placas solares?",
-      answer: "Nuestra cotización 100% gratuita incluye: evaluación completa de tu consumo eléctrico, diseño 3D personalizado del sistema, cálculo exacto de ahorros proyectados a 25 años, análisis del techo y recomendaciones de sellado si es necesario, estimado de instalación, opciones de financiamiento, y seguimiento personalizado. Sin letra pequeña ni costos ocultos."
+      answer: "Nuestra cotización 100% gratuita incluye: evaluación completa de tu consumo eléctrico, diseño 3D personalizado del sistema, cálculo exacto de ahorros proyectados a 25 años, análisis del techo y recomendaciones de sellado si es necesario, estimado de instalación, y seguimiento personalizado. Sin letra pequeña ni costos ocultos."
     },
     {
       question: "¿Cuánto tiempo toma instalar placas solares en Puerto Rico?",
