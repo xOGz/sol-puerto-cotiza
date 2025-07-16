@@ -84,7 +84,7 @@ const FAQSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-in-up">
-          <div className="bg-gradient-to-r from-green-500 to-yellow-500 p-8 rounded-3xl max-w-2xl mx-auto text-white">
+          <div className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary p-8 rounded-3xl max-w-2xl mx-auto text-white">
             <h3 className="text-2xl font-bold mb-4">
               ¿Listo para empezar a ahorrar con energía solar?
             </h3>
