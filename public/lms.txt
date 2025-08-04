@@ -1,0 +1,7 @@
+# Learning Management System Configuration
+# This file is not applicable as this website does not use LMS functionality
+# Kilowatt PR is a solar panel installation company website
+# No learning management system is implemented
+
+# If LMS functionality is needed in the future, this file can be configured
+# Current status: Not applicable

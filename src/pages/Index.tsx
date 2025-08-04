@@ -6,6 +6,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import GoogleReviews from "@/components/GoogleReviews";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FeatureGrid from "@/components/FeatureGrid";
+import ContentSection from "@/components/ContentSection";
 import CompanyMission from "@/components/CompanyMission";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
@@ -29,17 +30,20 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
-      <TrustSection />
-      <TestimonialsSection />
-      <GoogleReviews />
-      <HowItWorksSection />
-      <FeatureGrid />
-      <CompanyMission />
-      <PricingSection />
-      <FAQSection />
-      <InternalLinking />
-      <LeadCaptureSection />
+      <main>
+        <HeroSection />
+        <TrustSection />
+        <TestimonialsSection />
+        <GoogleReviews />
+        <HowItWorksSection />
+        <FeatureGrid />
+        <ContentSection />
+        <CompanyMission />
+        <PricingSection />
+        <FAQSection />
+        <InternalLinking />
+        <LeadCaptureSection />
+      </main>
       <Footer />
       <WhatsAppButton />
     </div>

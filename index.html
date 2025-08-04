@@ -32,13 +32,31 @@
     <meta name="twitter:description" content="Ahorra hasta 90% en tu factura de luz con placas solares en Puerto Rico" />
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=630&fit=crop" />
 
-    <!-- Schema.org Structured Data -->
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Kilowatt PR LLC",
+      "alternateName": "Kilowatt PR",
+      "url": "https://kilowattpr.com",
+      "logo": "https://kilowattpr.com/lovable-uploads/e587b970-e5ac-441c-adc6-77af9d7caab7.png",
+      "description": "Empresa líder en instalación de placas solares en Puerto Rico. Ofrecemos sistemas de energía solar residencial y comercial con financiamiento disponible.",
+      "foundingDate": "2008",
+      "sameAs": [
+        "https://www.facebook.com/kilowattpr",
+        "https://www.instagram.com/kilowattpr"
+      ]
+    }
+    </script>
+
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Kilowatt PR LLC",
-      "description": "Empresa #1 en instalación de placas solares en Puerto Rico. Ahorra hasta 90% en tu factura de luz con sistemas solares profesionales.",
+      "description": "Empresa #1 en instalación de placas solares en Puerto Rico. Sistemas solares con batería, sellado de techo, lavado y mantenimiento.",
       "url": "https://kilowattpr.com",
       "telephone": "+1-787-431-2275",
       "email": "kilowattpr@gmail.com",
@@ -52,32 +70,36 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "18.4655",
-        "longitude": "-66.1057"
+        "latitude": 18.4655,
+        "longitude": -66.1057
       },
-      "openingHours": ["Mo-Fr 08:00-17:00"],
+      "openingHours": "Mo-Fr 08:00-17:00",
       "priceRange": "$$",
-      "areaServed": [
-        "Puerto Rico", "Aguada", "Mayagüez", "San Juan", "Caguas", "Ponce", "Bayamón", 
-        "Arecibo", "Guaynabo", "Trujillo Alto", "Carolina", "Dorado", "Rincón"
-      ],
-      "serviceType": [
-        "Instalación de placas solares",
-        "Sistemas solares con batería", 
-        "Sellado de techo",
-        "Lavado de placas solares",
-        "Mantenimiento sistemas solares"
-      ],
+      "areaServed": {
+        "@type": "State",
+        "name": "Puerto Rico"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "reviewCount": 147,
+        "bestRating": 5,
+        "worstRating": 1
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servicios de Energía Solar",
+        "name": "Servicios de Energía Solar Puerto Rico",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Instalación Placas Solares",
-              "description": "Instalación profesional de sistemas de placas solares residenciales y comerciales"
+              "name": "Instalación de Placas Solares",
+              "description": "Instalación profesional de sistemas de paneles solares residenciales y comerciales en Puerto Rico con garantía de 25 años."
+            },
+            "availableAtOrFrom": {
+              "@type": "Place",
+              "name": "Puerto Rico"
             }
           },
           {
@@ -85,50 +107,66 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Sistemas Solares con Batería",
-              "description": "Sistemas de energía solar con respaldo de batería para uso durante apagones"
+              "description": "Sistemas de energía solar con respaldo de batería para hogares en Puerto Rico. Funcionan durante apagones de LUMA Energy."
+            },
+            "availableAtOrFrom": {
+              "@type": "Place",
+              "name": "Puerto Rico"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sellado de Techo",
+              "description": "Servicio de sellado e impermeabilización de techos antes y después de la instalación de placas solares."
+            },
+            "availableAtOrFrom": {
+              "@type": "Place",
+              "name": "Puerto Rico"
             }
           }
         ]
+      }
+    }
+    </script>
+
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Instalación de Placas Solares Puerto Rico",
+      "description": "Instalación profesional de sistemas de energía solar en Puerto Rico. Incluye paneles solares, inversores, baterías y sellado de techo.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Kilowatt PR LLC"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "147",
-        "bestRating": "5",
-        "worstRating": "1"
+      "areaServed": {
+        "@type": "State",
+        "name": "Puerto Rico"
       },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "María González"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Paquetes de Energía Solar",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Sistema Solar Básico",
+            "description": "Sistema de placas solares de 5kW para hogares pequeños en Puerto Rico"
           },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+          {
+            "@type": "Offer",
+            "name": "Sistema Solar Premium",
+            "description": "Sistema de placas solares de 10kW con batería para hogares medianos"
           },
-          "reviewBody": "Excelente servicio! Instalaron mis placas solares en Aguada y ahora pago $50 menos al mes. El equipo fue muy profesional y terminaron en 2 días."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Carlos Mendoza"
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Increíble ahorro! Mis placas solares han reducido mi factura de luz en un 85%. Kilowatt PR hizo todo el proceso súper fácil y rápido."
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/kilowattpr",
-        "https://www.instagram.com/kilowattpr"
-      ]
+          {
+            "@type": "Offer",
+            "name": "Sistema Solar Comercial",
+            "description": "Sistemas de energía solar para negocios y empresas en Puerto Rico"
+          }
+        ]
+      }
     }
     </script>
 
@@ -140,26 +178,50 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿Qué incluye el sellado de techo?",
+          "name": "¿Cuánto cuestan las placas solares en Puerto Rico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nuestro servicio de sellado incluye la inspección completa del techo, sellado de grietas y huecos, aplicación de materiales impermeabilizantes de alta calidad, y garantía de 2 años en el trabajo."
-          }
-        },
-        {
-          "@type": "Question", 
-          "name": "¿Con qué frecuencia necesito lavar las placas solares?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Recomendamos lavar las placas cada 6-12 meses dependiendo de tu ubicación. En zonas con mucho polvo o cerca del mar, puede ser necesario más frecuente."
+            "text": "El costo promedio de un sistema solar residencial en Puerto Rico varía entre $15,000-$35,000. Ofrecemos financiamiento y cotización gratuita con análisis de costos y ahorros proyectados específico para tu hogar."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Qué incluye la cotización gratis?",
+          "name": "¿Qué incluye el sellado de techo con la instalación de placas solares?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestro servicio de sellado de techo incluye: inspección completa de la estructura, sellado profesional de todas las penetraciones, aplicación de materiales impermeabilizantes de alta calidad (Sika, Henry, GAF), garantía de 2 años en mano de obra, y certificado de impermeabilización."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "¿Con qué frecuencia debo lavar las placas solares en Puerto Rico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Puerto Rico recomendamos lavar las placas solares cada 6-8 meses debido al polvo del Sahara, sal marina y lluvia frecuente. En zonas costeras puede ser necesario cada 4-6 meses. Nuestro servicio de lavado especializado puede aumentar la eficiencia hasta 15%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funcionan las placas solares durante apagones de LUMA Energy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con nuestros sistemas solares con batería de respaldo, tendrás electricidad durante los apagones de LUMA. Las placas cargan las baterías durante el día y puedes usar esa energía cuando se va la luz. Es como tener tu propia planta eléctrica personal las 24 horas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué incluye la cotización gratuita de placas solares?",
           "acceptedAnswer": {
             "@type": "Answer", 
-            "text": "Incluye: evaluación completa del consumo, diseño personalizado del sistema, cálculo exacto de ahorros, análisis del techo y recomendaciones de sellado, estimado de instalación y todos los permisos necesarios."
+            "text": "Nuestra cotización 100% gratuita incluye: evaluación completa de tu consumo eléctrico, diseño 3D personalizado del sistema, cálculo exacto de ahorros proyectados a 25 años, análisis del techo y recomendaciones de sellado si es necesario, estimado de instalación, y seguimiento personalizado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo toma instalar placas solares en Puerto Rico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El proceso completo desde la firma del contrato hasta que tu sistema está produciendo energía limpia toma 6-10 semanas. Esto incluye: instalación física (1-2 días), inspecciones (1 semana), y conexión final. La instalación en tu techo, incluyendo sellado, toma solo 1-2 días."
           }
         }
       ]
