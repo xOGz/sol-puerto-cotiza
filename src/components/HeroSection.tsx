@@ -32,7 +32,7 @@ const HeroSection = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-5xl mx-auto animate-fade-in-up">
             
-            {/* Main Headline - SEO Optimized */}
+            {/* Main Headline - SEO Optimized H1 */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               <span className="block">Placas Solares</span>
               <span className="block">Puerto Rico</span>
