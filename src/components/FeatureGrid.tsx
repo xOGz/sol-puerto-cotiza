@@ -21,7 +21,7 @@ const FeatureGrid = () => {
     description: "Servicio técnico especializado para mantener tu sistema funcionando óptimamente",
     color: "from-solar-500 to-solar-600"
   }];
-  return <section className="section-spacing bg-white">
+  return <section id="servicios" className="section-spacing bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
