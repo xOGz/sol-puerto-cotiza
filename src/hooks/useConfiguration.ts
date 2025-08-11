@@ -1,29 +1,22 @@
-
 import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
 
 export const useConfiguration = () => {
-  return useQuery({
+  return useQuery<{ [key: string]: string }>({
     queryKey: ['configuration'],
     queryFn: async () => {
-      const { data, error } = await supabase
-        .from('configuraciones')
-        .select('*');
-
-      if (error) {
-        console.error('Error fetching configuration:', error);
-        throw error;
+      try {
+        const res = await fetch('/config.json', { cache: 'force-cache' });
+        if (!res.ok) throw new Error('Failed to load /config.json');
+        const json = await res.json();
+        const config: Record<string, string> = {};
+        Object.entries(json).forEach(([k, v]) => {
+          if (v !== undefined && v !== null) config[k] = String(v);
+        });
+        return config;
+      } catch (error) {
+        console.warn('Configuration not available, using defaults:', error);
+        return {} as Record<string, string>;
       }
-
-      // Convert array to object for easier access
-      const config: Record<string, string> = {};
-      data?.forEach(item => {
-        if (item.clave && item.valor) {
-          config[item.clave] = item.valor;
-        }
-      });
-
-      return config;
     },
     staleTime: 10 * 60 * 1000, // 10 minutes
   });
