@@ -14,6 +14,7 @@ import InternalLinking from "@/components/InternalLinking";
 import LeadCaptureSection from "@/components/LeadCaptureSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -28,8 +29,13 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <Navigation />
+      <div className="min-h-screen">
+        <SEO 
+          title="Placas Solares Puerto Rico | Instalación y Ahorro - Kilowatt PR"
+          description="Instalación de placas solares en Puerto Rico. Energía renovable y ahorro en tu factura. Cotización GRATIS, garantía 25 años."
+          canonicalPath="/"
+        />
+        <Navigation />
       <main>
         <HeroSection />
         <TrustSection />

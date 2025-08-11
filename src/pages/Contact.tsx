@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -65,8 +66,12 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <SEO 
+        title="Contáctanos | Cotización Placas Solares Puerto Rico"
+        description="Solicita tu cotización gratuita de placas solares en Puerto Rico. Te asesoramos en instalación, baterías y ahorro energético."
+        canonicalPath="/contact"
+      />
       
-      {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-solar-50 to-ocean-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">

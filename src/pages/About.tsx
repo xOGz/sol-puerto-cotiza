@@ -1,14 +1,19 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { Users, Award, Leaf, Heart } from "lucide-react";
 
 const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <SEO 
+        title="Sobre Kilowatt PR | Empresa de Placas Solares Puerto Rico"
+        description="Conoce a Kilowatt PR: expertos en instalación de placas solares en Puerto Rico. Energía renovable, calidad y servicio al cliente."
+        canonicalPath="/about"
+      />
       
-      {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-solar-50 to-ocean-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">

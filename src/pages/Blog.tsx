@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -86,6 +87,11 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
+      <SEO 
+        title="Blog Energía Solar Puerto Rico | Costos, Instalación y Mantenimiento"
+        description="Artículos expertos sobre placas solares en Puerto Rico: instalación, costos, mantenimiento y comparativas para ahorrar energía."
+        canonicalPath="/blog"
+      />
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-green-50 to-yellow-50">
