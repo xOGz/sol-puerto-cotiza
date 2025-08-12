@@ -42,10 +42,10 @@ const Index = () => {
         <TestimonialsSection />
         <GoogleReviews />
         <HowItWorksSection />
+        <PricingSection />
         <FeatureGrid />
         <ContentSection />
         <CompanyMission />
-        <PricingSection />
         <FAQSection />
         <InternalLinking />
         <LeadCaptureSection />
