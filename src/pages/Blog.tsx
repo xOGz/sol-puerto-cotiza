@@ -215,6 +215,88 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* Featured Content Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+              Todo sobre Placas Solares en Puerto Rico
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-green-50 to-yellow-50 p-8 rounded-2xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">¿Por qué elegir energía solar en Puerto Rico?</h3>
+                <p className="text-gray-700 mb-4">
+                  Puerto Rico recibe más de 300 días de sol al año, convirtiéndolo en el lugar perfecto para la energía solar. 
+                  Con las constantes alzas en las tarifas de LUMA Energy y los frecuentes apagones, las placas solares 
+                  representan la solución más inteligente para tu hogar.
+                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Ahorro inmediato:</strong> Reduce tu factura hasta 90%</li>
+                  <li>• <strong>Protección contra apagones:</strong> Con sistemas de batería</li>
+                  <li>• <strong>Incentivos federales:</strong> 30% de crédito fiscal</li>
+                  <li>• <strong>Aumento del valor:</strong> Tu propiedad se valoriza</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-2xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Nuestros servicios especializados</h3>
+                <p className="text-gray-700 mb-4">
+                  En Kilowatt PR entendemos las necesidades específicas del clima tropical de Puerto Rico. 
+                  Ofrecemos soluciones completas que van más allá de la simple instalación.
+                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Sellado profesional:</strong> Protegemos tu techo contra lluvia</li>
+                  <li>• <strong>Sistemas resistentes:</strong> Diseñados para huracanes</li>
+                  <li>• <strong>Lavado especializado:</strong> Mantenimiento contra polvo del Sahara</li>
+                  <li>• <strong>Monitoreo 24/7:</strong> Supervisamos tu producción de energía</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Preguntas frecuentes sobre placas solares en Puerto Rico
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">¿Cuánto tiempo dura una instalación?</h4>
+                  <p className="text-gray-700 text-sm">
+                    La instalación física toma 1-2 días. El proceso completo desde la firma hasta 
+                    que tu sistema está produciendo energía toma 6-10 semanas, incluyendo permisos e inspecciones.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">¿Qué pasa durante un huracán?</h4>
+                  <p className="text-gray-700 text-sm">
+                    Nuestros sistemas están diseñados para resistir vientos de hasta 140 mph. 
+                    Instalamos con anclajes especiales y seguimos todos los códigos de construcción de Puerto Rico.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">¿Necesito cambiar mi techo antes?</h4>
+                  <p className="text-gray-700 text-sm">
+                    Evaluamos tu techo gratuitamente. Si necesita reparaciones, ofrecemos servicio de 
+                    sellado profesional para garantizar que esté en perfectas condiciones.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">¿Cómo funciona el financiamiento?</h4>
+                  <p className="text-gray-700 text-sm">
+                    Ofrecemos múltiples opciones: desde $0 inicial, préstamos solares con tasas bajas, 
+                    y planes de pago que te permiten ahorrar desde el primer día.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-green-500 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
@@ -223,14 +305,20 @@ const Blog = () => {
               ¿Listo para instalar placas solares en tu hogar?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Después de leer nuestros artículos, da el siguiente paso hacia el ahorro energético
+              Después de leer nuestros artículos, da el siguiente paso hacia el ahorro energético. 
+              Únete a las miles de familias en Puerto Rico que ya están ahorrando con energía solar.
             </p>
-            <Button 
-              onClick={scrollToQuote}
-              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300"
-            >
-              🔥 Obtén tu cotización gratuita
-            </Button>
+            <div className="space-y-4">
+              <Button 
+                onClick={scrollToQuote}
+                className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 mr-4"
+              >
+                🔥 Obtén tu cotización gratuita
+              </Button>
+              <p className="text-sm opacity-80">
+                Cotización 100% gratuita • Sin compromisos • Análisis personalizado de tu consumo
+              </p>
+            </div>
           </div>
         </div>
       </section>

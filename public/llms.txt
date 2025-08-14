@@ -1,0 +1,47 @@
+# Kilowatt PR - Instalación de Placas Solares Puerto Rico
+
+## About this site
+This site is for Kilowatt PR LLC, a solar panel installation company serving Puerto Rico. We provide residential and commercial solar energy solutions.
+
+## Main Services
+- Solar panel installation
+- Battery storage systems
+- Roof sealing services
+- Solar maintenance and cleaning
+- Energy audits and consultations
+
+## Target Keywords
+- placas solares puerto rico
+- instalación paneles solares
+- energía solar residencial
+- baterías solares
+- sellado de techo
+- ahorro energético
+
+## Service Areas
+We serve all municipalities in Puerto Rico including:
+- San Juan Metropolitan Area
+- Bayamón, Carolina, Caguas
+- Ponce, Mayagüez, Arecibo
+- All other municipalities island-wide
+
+## Contact Information
+- Phone: (787) 555-0123
+- Email: info@kilowattpr.com
+- Website: https://kilowattpr.com
+- Address: 123 Calle Solar, San Juan, PR 00926
+
+## Content Strategy
+Focus on practical solar information for Puerto Rico residents, addressing local concerns like:
+- Hurricane preparedness with battery backup
+- LUMA Energy rate increases
+- Federal and local solar incentives
+- Tropical climate considerations
+- Local permitting processes
+
+## Technical Details
+- Built with React, TypeScript, Tailwind CSS
+- SEO optimized for Puerto Rico solar market
+- Mobile-responsive design
+- WhatsApp integration for customer service
+- Lead capture and contact forms

@@ -303,17 +303,109 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Why Choose Us Section */}
       <section className="section-spacing bg-gray-50">
         <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12 animate-fade-in-up">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                ¿Por qué elegir Kilowatt PR para tu proyecto solar?
+              </h2>
+              <p className="text-lg text-gray-600">
+                Somos la empresa #1 en instalación de placas solares en Puerto Rico, 
+                con más de 15 años de experiencia y miles de familias satisfechas.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              <div className="glass p-6 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl text-white font-bold">15+</span>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Años de experiencia</h3>
+                <p className="text-gray-600 text-sm">
+                  Instalando sistemas solares en Puerto Rico desde 2008, conocemos perfectamente 
+                  las condiciones climáticas y regulaciones locales.
+                </p>
+              </div>
+              
+              <div className="glass p-6 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl text-white font-bold">3K+</span>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Familias satisfechas</h3>
+                <p className="text-gray-600 text-sm">
+                  Más de 3,000 familias en Puerto Rico ya están ahorrando con nuestros 
+                  sistemas solares de alta calidad y servicio excepcional.
+                </p>
+              </div>
+              
+              <div className="glass p-6 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl text-white font-bold">25</span>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Años de garantía</h3>
+                <p className="text-gray-600 text-sm">
+                  Ofrecemos garantía de 25 años en paneles y 10 años en inversores, 
+                  respaldando tu inversión a largo plazo.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-green-50 to-yellow-50 p-8 rounded-2xl mb-12">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Nuestro proceso paso a paso
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">1</div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Consulta inicial</h4>
+                  <p className="text-gray-600 text-sm">
+                    Evaluamos tu consumo eléctrico, inspeccionamos tu techo y diseñamos el sistema perfecto.
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Diseño personalizado</h4>
+                  <p className="text-gray-600 text-sm">
+                    Creamos un diseño 3D específico para tu hogar y calculamos tus ahorros proyectados.
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">3</div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Instalación profesional</h4>
+                  <p className="text-gray-600 text-sm">
+                    Nuestro equipo certificado instala tu sistema con los más altos estándares de calidad.
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">4</div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Soporte continuo</h4>
+                  <p className="text-gray-600 text-sm">
+                    Monitoreo 24/7, mantenimiento programado y soporte técnico de por vida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="section-spacing bg-white">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in-up">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Visítanos</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Visítanos en Aguada, Puerto Rico</h2>
             <p className="text-lg text-gray-600">
-              Nuestra oficina está ubicada en el corazón de San Juan
+              Nuestra oficina principal está ubicada en Aguada, pero servimos toda la isla de Puerto Rico
             </p>
           </div>
           
-          <div className="glass rounded-3xl overflow-hidden h-96 animate-fade-in-up">
+          <div className="glass rounded-3xl overflow-hidden h-96 animate-fade-in-up mb-8">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.8447168123!2d-66.10572!3d18.4655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI3JzU1LjgiTiA2NsKwMDYnMjAuNiJX!5e0!3m2!1sen!2spr!4v1"
               width="100%"
@@ -322,8 +414,19 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación Kilowatt PR"
+              title="Ubicación Kilowatt PR en Aguada, Puerto Rico"
             />
+          </div>
+          
+          <div className="text-center">
+            <p className="text-gray-600 mb-4">
+              <strong>Dirección:</strong> HC 3 Box 31767, Aguada, PR 00602<br />
+              <strong>Horario:</strong> Lunes a Viernes 8:00 AM - 5:00 PM | Sábados 9:00 AM - 2:00 PM
+            </p>
+            <p className="text-sm text-gray-500">
+              Aunque nuestra oficina está en Aguada, realizamos instalaciones en todos los 78 municipios de Puerto Rico. 
+              Nuestro equipo viaja a cualquier lugar de la isla para brindarte el mejor servicio.
+            </p>
           </div>
         </div>
       </section>
