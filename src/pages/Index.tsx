@@ -31,8 +31,8 @@ const Index = () => {
   return (
       <div className="min-h-screen">
         <SEO 
-          title="Placas Solares Puerto Rico | Instalación y Ahorro - Kilowatt PR"
-          description="Instalación de placas solares en Puerto Rico. Energía renovable y ahorro en tu factura. Cotización GRATIS, garantía 25 años."
+          title="Perito Electricista Puerto Rico | Instalación Paneles Solares | Kilowatt PR"
+          description="Perito electricista colegiado especialista en energía solar Puerto Rico. Instalación profesional de paneles solares residenciales y comerciales. Servicio certificado en toda la isla."
           canonicalPath="/"
         />
         <Navigation />

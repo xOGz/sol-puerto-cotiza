@@ -34,9 +34,9 @@ const HeroSection = () => {
             
             {/* Main Headline - SEO Optimized H1 */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              <span className="block">Placas Solares</span>
-              <span className="block">Puerto Rico</span>
-              <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">Ahorra 90%</span>
+              <span className="block">Perito Electricista Colegiado</span>
+              <span className="block">Especialista en Energía Solar</span>
+              <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">Puerto Rico</span>
             </h1>
 
             {/* Subheadline - Long tail keywords */}
