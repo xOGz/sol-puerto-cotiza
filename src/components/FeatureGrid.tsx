@@ -56,7 +56,7 @@ const FeatureGrid = () => {
             <div className="text-gray-600">Años de experiencia</div>
           </div>
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <div className="text-3xl font-bold text-solar-500 mb-2">500+</div>
+            <div className="text-3xl font-bold text-solar-500 mb-2">300+</div>
             <div className="text-gray-600">Instalaciones completadas</div>
           </div>
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
