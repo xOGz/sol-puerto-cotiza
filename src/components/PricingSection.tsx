@@ -18,8 +18,9 @@ const PricingSection = () => {
         "Garantía 25 años en paneles",
         "Garantía 10 años en inversor y batería",
         "Estructura UniRac",
+        "Transfer switch incluido",
         "Monitoreo por celular",
-        "Instalación profesional incluida"
+        "Instalación básica incluida"
       ],
       limitations: [],
       ideal: "Perfecto para empezar con energía solar",
@@ -39,9 +40,11 @@ const PricingSection = () => {
         "Garantía 25 años en paneles",
         "10 años de garantía en inversor y batería",
         "Estructura UniRac",
+        "Transfer switch incluido",
         "Incluye medición neta",
         "Monitoreo por celular",
-        "Energía durante apagones"
+        "Energía durante apagones",
+        "Instalación básica incluida"
       ],
       limitations: [],
       ideal: "Perfecto para familias promedio",
@@ -61,9 +64,11 @@ const PricingSection = () => {
         "Garantía 25 años en paneles",
         "10 años de garantía en inversor y baterías",
         "Estructura UniRac",
+        "Transfer switch incluido",
         "Incluye medición neta",
         "Monitoreo por celular",
-        "Ideal para casas con alto consumo"
+        "Ideal para casas con alto consumo",
+        "Instalación básica incluida"
       ],
       limitations: [],
       ideal: "Ideal para casas grandes y comercios pequeños",
@@ -80,9 +85,10 @@ const PricingSection = () => {
         "Para viviendas sin conexión a LUMA",
         "Diseño personalizado",
         "Batería e inversor de gran capacidad",
+        "Transfer switch incluido",
         "Ingeniería especializada",
         "Monitoreo incluido",
-        "Instalación por personal certificado"
+        "Instalación básica incluida"
       ],
       limitations: [],
       ideal: "Para ubicaciones remotas",
@@ -98,10 +104,12 @@ const PricingSection = () => {
       features: [
         "Para negocios, oficinas o propiedades industriales",
         "Diseño a medida según consumo y espacio",
+        "Transfer switch incluido",
         "Incluye permisos, monitoreo, e ingeniería",
         "Garantías comerciales extendidas",
         "Soporte técnico especializado",
-        "ROI optimizado para empresas"
+        "ROI optimizado para empresas",
+        "Instalación básica incluida"
       ],
       limitations: [],
       ideal: "Ideal para reducir costos operativos",
