@@ -62,15 +62,6 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonios" className="section-spacing bg-gradient-to-br from-kilowatt-primary/10 to-kilowatt-secondary/10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Familias boricuas ya están ahorrando
-          </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Estos son algunos de nuestros clientes satisfechos en toda la isla
-          </p>
-        </div>
-
         {/* Promotional Image Section */}
         <div className="flex justify-center mb-12 animate-fade-in-up">
           <img 
@@ -78,6 +69,15 @@ const TestimonialsSection = () => {
             alt="100% Garantizado - Kilowatt PR LLC" 
             className="max-w-md w-full h-auto rounded-2xl shadow-lg"
           />
+        </div>
+
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Familias boricuas ya están ahorrando
+          </h2>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            Estos son algunos de nuestros clientes satisfechos en toda la isla
+          </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
