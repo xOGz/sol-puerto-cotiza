@@ -9,7 +9,7 @@ import FeatureGrid from "@/components/FeatureGrid";
 import ContentSection from "@/components/ContentSection";
 import CompanyMission from "@/components/CompanyMission";
 import PricingSection from "@/components/PricingSection";
-import FAQSection from "@/components/FAQSection";
+
 import InternalLinking from "@/components/InternalLinking";
 import LeadCaptureSection from "@/components/LeadCaptureSection";
 import Footer from "@/components/Footer";
@@ -46,7 +46,7 @@ const Index = () => {
         <FeatureGrid />
         <ContentSection />
         <CompanyMission />
-        <FAQSection />
+        
         <InternalLinking />
         <LeadCaptureSection />
       </main>

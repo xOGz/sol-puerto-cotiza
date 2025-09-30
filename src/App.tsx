@@ -14,6 +14,7 @@ import EnergiaRenovable from "./pages/EnergiaRenovable";
 import MantenimientoSolar from "./pages/MantenimientoSolar";
 import Mayaguez from "./pages/Mayaguez";
 import Aguadilla from "./pages/Aguadilla";
+import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
 
 const App = () => (
   <TooltipProvider>
@@ -31,6 +32,7 @@ const App = () => (
         <Route path="/mantenimiento-paneles-solares" element={<MantenimientoSolar />} />
         <Route path="/perito-electricista-mayaguez" element={<Mayaguez />} />
         <Route path="/paneles-solares-aguadilla" element={<Aguadilla />} />
+        <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

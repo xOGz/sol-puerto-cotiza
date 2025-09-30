@@ -69,6 +69,12 @@ const Navigation = () => {
               >
                 Blog Solar
               </Link>
+              <Link
+                to="/preguntas-frecuentes"
+                className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
+              >
+                FAQ
+              </Link>
               <a
                 href="tel:+17874312275"
                 className="text-gray-700 hover:text-kilowatt-primary transition-colors font-medium"
@@ -117,6 +123,13 @@ const Navigation = () => {
                   className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
                 >
                   Blog Solar
+                </Link>
+                <Link
+                  to="/preguntas-frecuentes"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full text-left text-lg font-medium text-gray-700 hover:text-kilowatt-primary transition-colors"
+                >
+                  Preguntas Frecuentes
                 </Link>
                 <a
                   href="tel:+17874312275"
