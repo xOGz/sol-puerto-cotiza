@@ -43,21 +43,21 @@ const CompanyMission = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <div className="text-4xl font-bold text-solar-500 mb-2">2.5M</div>
+                <div className="text-4xl font-bold text-solar-500 mb-2">750K</div>
                 <div className="text-gray-600">kWh generados anualmente</div>
-                <div className="text-sm text-gray-500 mt-2">Equivale a plantar 1,200 árboles</div>
+                <div className="text-sm text-gray-500 mt-2">Equivale a plantar 350 árboles</div>
               </div>
               
               <div>
-                <div className="text-4xl font-bold text-kilowatt-primary mb-2">$850K</div>
+                <div className="text-4xl font-bold text-kilowatt-primary mb-2">$285K</div>
                 <div className="text-gray-600">Ahorrados por nuestros clientes</div>
                 <div className="text-sm text-gray-500 mt-2">En facturas eléctricas este año</div>
               </div>
               
               <div>
-                <div className="text-4xl font-bold text-ocean-500 mb-2">78</div>
+                <div className="text-4xl font-bold text-ocean-500 mb-2">42</div>
                 <div className="text-gray-600">Municipios servidos</div>
-                <div className="text-sm text-gray-500 mt-2">Cubriendo toda la isla</div>
+                <div className="text-sm text-gray-500 mt-2">A través de la isla</div>
               </div>
             </div>
           </div>
