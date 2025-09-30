@@ -5,65 +5,68 @@ import { Button } from "@/components/ui/button";
 const PricingSection = () => {
   const packages = [
     {
-      name: "Sistema Grid-Tied",
-      subtitle: "Solo placas",
-      price: "Desde $8,500",
+      name: "Sistema Pequeño",
+      subtitle: "Entrada con batería",
+      price: "$10,900",
       popular: false,
       icon: Home,
       type: "residential",
       features: [
-        "6-8 paneles solares",
-        "Microinversores Enphase",
+        "4 kW de placas solares",
+        "10 kWh batería EG4 LifePower4",
+        "Inversor EG4 6000 XP",
         "Garantía 25 años en paneles",
-        "Garantía 10 años en microinversores",
-        "Monitoreo avanzado incluido",
-        "Lavado de placas gratis el primer año"
+        "Garantía 10 años en inversor y batería",
+        "Estructura UniRac",
+        "Monitoreo por celular",
+        "Instalación profesional incluida"
       ],
-      limitations: ["Sin batería ni respaldo"],
-      ideal: "Ideal para bajar consumo conectado a LUMA",
+      limitations: [],
+      ideal: "Perfecto para empezar con energía solar",
       category: "Residencial"
     },
     {
-      name: "Sistema Mediano con Respaldo",
-      subtitle: "Con batería de litio",
-      price: "Desde $15,800",
+      name: "Sistema Mediano",
+      subtitle: "Con batería de respaldo",
+      price: "Cotización personalizada",
       popular: true,
       icon: Zap,
       type: "residential",
       features: [
-        "10-12 paneles solares",
-        "10-15 kWh de batería de litio",
-        "Inversor híbrido",
+        "5 kW de placas solares",
+        "Batería EG4 All Weather 14.3 kWh",
+        "Inversor EG4 Híbrido 12 kPV",
         "Garantía 25 años en paneles",
-        "Garantía 10 años en inversor y batería",
-        "Monitoreo avanzado",
-        "Monitoreo avanzado",
-        "Energía durante apagones",
-        "Lavado de placas gratis el primer año"
+        "10 años de garantía en inversor y batería",
+        "Estructura UniRac",
+        "Incluye medición neta",
+        "Monitoreo por celular",
+        "Energía durante apagones"
       ],
       limitations: [],
       ideal: "Perfecto para familias promedio",
       category: "Residencial"
     },
     {
-      name: "Sistema Grande Alta Capacidad",
-      subtitle: "Máximo rendimiento",
-      price: "Desde $23,000",
+      name: "Sistema Grande",
+      subtitle: "Máxima capacidad",
+      price: "Cotización personalizada",
       popular: false,
       icon: Building,
       type: "residential",
       features: [
-        "20+ paneles solares",
-        "20+ kWh de batería de litio",
-        "Inversor híbrido",
-        "Ideal para casas con alto consumo y aires acondicionados",
-        "Garantías completas (paneles, inversor, batería)",
-        "Monitoreo avanzado",
-        "Monitoreo avanzado",
-        "Lavado de placas gratis el primer año"
+        "Más de 10 kW de placas solares",
+        "(2) Baterías EG4 All Weather 14.3 kWh c/u",
+        "Inversor EG4 18 kPV",
+        "Garantía 25 años en paneles",
+        "10 años de garantía en inversor y baterías",
+        "Estructura UniRac",
+        "Incluye medición neta",
+        "Monitoreo por celular",
+        "Ideal para casas con alto consumo"
       ],
       limitations: [],
-      ideal: "Ideal para casas grandes",
+      ideal: "Ideal para casas grandes y comercios pequeños",
       category: "Residencial"
     },
     {
@@ -215,7 +218,7 @@ const PricingSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
               <div className="flex items-center">
                 <Check className="w-5 h-5 text-kilowatt-primary mr-3 flex-shrink-0" />
-                <span className="text-gray-700">Monitoreo incluido en todos los sistemas</span>
+                <span className="text-gray-700">Monitoreo por celular en todos los sistemas</span>
               </div>
               <div className="flex items-center">
                 <Check className="w-5 h-5 text-kilowatt-primary mr-3 flex-shrink-0" />
