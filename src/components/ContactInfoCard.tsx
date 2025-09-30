@@ -23,7 +23,7 @@ const ContactInfoCard = () => {
           </div>
           <div>
             <div className="font-semibold text-gray-900">Teléfono</div>
-            <div className="text-gray-600">{config?.empresa_telefono || "(787) 555-0123"}</div>
+            <div className="text-gray-600">{config?.empresa_telefono || "(787) 431-2275"}</div>
           </div>
         </div>
 
