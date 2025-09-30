@@ -80,11 +80,11 @@ const ContentSection = () => {
                   2
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-2">Permisos y Financiamiento</h4>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Permisos y Trámites</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Nos encargamos de todos los permisos municipales y de LUMA Energy. Ofrecemos múltiples opciones 
-                    de financiamiento: cash, préstamos solares con 0% de interés inicial, y planes de pago flexibles 
-                    para que puedas instalar placas solares sin pago inicial.
+                    Nos encargamos de todos los permisos municipales y de LUMA Energy. Gestionamos la documentación 
+                    técnica, planos eléctricos certificados por perito electricista colegiado, y coordinamos las 
+                    inspecciones requeridas para garantizar el cumplimiento total con las regulaciones locales.
                   </p>
                 </div>
               </div>
