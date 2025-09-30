@@ -1,30 +1,24 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, CheckCircle, Clock, Users, Award } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
-
 const HeroSection = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-
   const scrollToQuote = () => {
     const element = document.querySelector('#cotizacion');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <>
+  return <>
       <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white pt-20">
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0">
-          <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url('/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png')`
-            }}
-          />
+          <div className="w-full h-full bg-cover bg-center bg-no-repeat" style={{
+          backgroundImage: `url('/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png')`
+        }} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
         </div>
 
@@ -34,8 +28,8 @@ const HeroSection = () => {
             
             {/* Main Headline - SEO Optimized H1 */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              <span className="block">Perito Electricista Colegiado</span>
-              <span className="block">Especialista en Energía Solar</span>
+              <span className="block">Peritos Electricistas </span>
+              <span className="block">Especialistas en Energía Solar</span>
               <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">Puerto Rico</span>
             </h1>
 
@@ -47,11 +41,7 @@ const HeroSection = () => {
 
             {/* Main CTA */}
             <div className="mb-12">
-              <Button 
-                onClick={scrollToQuote}
-                size="lg"
-                className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow"
-              >
+              <Button onClick={scrollToQuote} size="lg" className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow">
                 🔥 Solicita Cotización Gratis
               </Button>
               <p className="text-sm text-white/90 mt-2">✓ Sin compromiso ✓ Respuesta garantizada en 24hrs ✓ Expertos locales</p>
@@ -62,23 +52,23 @@ const HeroSection = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <Award className="w-8 h-8 text-kilowatt-primary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">25 años</div>
-                <div className="text-gray-700 text-sm">Garantía placas</div>
+                <div className="text-lg font-bold text-gray-900 mb-1">Certificaciones Con Luma</div>
+                <div className="text-gray-700 text-sm">Perito Electricistas</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <CheckCircle className="w-8 h-8 text-kilowatt-secondary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Instalación</div>
+                <div className="text-lg font-bold text-gray-900 mb-1">Instalación De Sistemas Solares</div>
                 <div className="text-gray-700 text-sm">Profesional</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <Users className="w-8 h-8 text-kilowatt-primary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Sellado</div>
-                <div className="text-gray-700 text-sm">De techo</div>
+                <div className="text-lg font-bold text-gray-900 mb-1">Lavado + Sellado De Techo</div>
+                <div className="text-gray-700 text-sm">Tratamiento Exclusivo</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <CheckCircle className="w-8 h-8 text-kilowatt-secondary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Lavado</div>
-                <div className="text-gray-700 text-sm">De placas</div>
+                <div className="text-lg font-bold text-gray-900 mb-1">Limpieza de Placas Solares</div>
+                <div className="text-gray-700 text-sm">Toda La Isla</div>
               </div>
             </div>
 
@@ -112,12 +102,7 @@ const HeroSection = () => {
       </section>
 
       {/* Video Modal */}
-      <VideoModal 
-        isOpen={isVideoModalOpen} 
-        onClose={() => setIsVideoModalOpen(false)} 
-      />
-    </>
-  );
+      <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
+    </>;
 };
-
 export default HeroSection;
