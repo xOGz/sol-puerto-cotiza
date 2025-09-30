@@ -17,8 +17,8 @@
     --primary: 45 100% 55%;
     --primary-foreground: 237 69% 15%;
 
-    --secondary: 217 91% 65%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 195 100% 60%;
+    --secondary-foreground: 237 69% 15%;
 
     --muted: 237 30% 90%;
     --muted-foreground: 237 20% 40%;
@@ -46,10 +46,10 @@
 
     /* Kilowatt PR Brand Colors */
     --kilowatt-primary: 45 100% 55%;
-    --kilowatt-secondary: 217 91% 65%;
+    --kilowatt-secondary: 195 100% 60%;
     --kilowatt-accent: 237 69% 15%;
     --kilowatt-gold: 45 100% 55%;
-    --kilowatt-blue: 217 91% 65%;
+    --kilowatt-blue: 195 100% 60%;
     
     /* WhatsApp Brand Color */
     --whatsapp-green: 142 70% 49%;
@@ -68,8 +68,8 @@
     --primary: 45 100% 55%;
     --primary-foreground: 237 69% 15%;
 
-    --secondary: 217 91% 65%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 195 100% 60%;
+    --secondary-foreground: 237 69% 15%;
 
     --muted: 237 30% 20%;
     --muted-foreground: 237 20% 70%;
@@ -94,10 +94,10 @@
 
     /* Kilowatt PR Brand Colors - Dark Mode */
     --kilowatt-primary: 45 100% 55%;
-    --kilowatt-secondary: 217 91% 65%;
+    --kilowatt-secondary: 195 100% 60%;
     --kilowatt-accent: 237 69% 15%;
     --kilowatt-gold: 45 100% 55%;
-    --kilowatt-blue: 217 91% 65%;
+    --kilowatt-blue: 195 100% 60%;
     
     /* WhatsApp Brand Color */
     --whatsapp-green: 142 70% 49%;
