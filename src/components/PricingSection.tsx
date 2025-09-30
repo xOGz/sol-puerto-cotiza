@@ -28,7 +28,7 @@ const PricingSection = () => {
     {
       name: "Sistema Mediano",
       subtitle: "Con batería de respaldo",
-      price: "Cotización personalizada",
+      price: "$15,800",
       popular: true,
       icon: Zap,
       type: "residential",
@@ -50,7 +50,7 @@ const PricingSection = () => {
     {
       name: "Sistema Grande",
       subtitle: "Máxima capacidad",
-      price: "Cotización personalizada",
+      price: "$23,000",
       popular: false,
       icon: Building,
       type: "residential",
