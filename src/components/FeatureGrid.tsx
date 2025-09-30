@@ -1,9 +1,9 @@
-import { Shield, Smartphone, Clock, Wrench } from "lucide-react";
+import { Shield, Smartphone, Clock, Droplets } from "lucide-react";
 const FeatureGrid = () => {
   const features = [{
     icon: Shield,
-    title: "Garantía de 25 años",
-    description: "Protección completa en equipos y mano de obra por un cuarto de siglo",
+    title: "Sellado profesional de techo",
+    description: "Protegemos tu hogar con sellado especializado que garantiza cero filtraciones",
     color: "from-blue-500 to-blue-600"
   }, {
     icon: Smartphone,
@@ -12,13 +12,13 @@ const FeatureGrid = () => {
     color: "from-green-500 to-green-600"
   }, {
     icon: Clock,
-    title: "Instalación rápida",
-    description: "Proceso completo en 4-6 semanas, sin interrumpir tu rutina diaria",
+    title: "Instalación certificada",
+    description: "Técnicos especializados con licencia del Colegio de Ingenieros de PR",
     color: "from-purple-500 to-purple-600"
   }, {
-    icon: Wrench,
-    title: "Mantenimiento",
-    description: "Servicio técnico especializado para mantener tu sistema funcionando óptimamente",
+    icon: Droplets,
+    title: "Lavado y mantenimiento",
+    description: "Limpieza profesional de placas para máxima eficiencia energética",
     color: "from-solar-500 to-solar-600"
   }];
   return <section id="servicios" className="section-spacing bg-white">
