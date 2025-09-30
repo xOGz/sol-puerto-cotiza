@@ -86,9 +86,8 @@ const PricingSection = () => {
         "Diseño personalizado",
         "Batería e inversor de gran capacidad",
         "Transfer switch incluido",
-        "Ingeniería especializada",
-        "Monitoreo incluido",
-        "Instalación básica incluida"
+        "Integración con planta eléctrica",
+        "Monitoreo incluido"
       ],
       limitations: [],
       ideal: "Para ubicaciones remotas",
@@ -104,12 +103,10 @@ const PricingSection = () => {
       features: [
         "Para negocios, oficinas o propiedades industriales",
         "Diseño a medida según consumo y espacio",
-        "Transfer switch incluido",
         "Incluye permisos, monitoreo, e ingeniería",
         "Garantías comerciales extendidas",
         "Soporte técnico especializado",
-        "ROI optimizado para empresas",
-        "Instalación básica incluida"
+        "ROI optimizado para empresas"
       ],
       limitations: [],
       ideal: "Ideal para reducir costos operativos",
