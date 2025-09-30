@@ -74,10 +74,10 @@ const HeroSection = () => {
 
             {/* Trust Indicators - Local SEO */}
             <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 max-w-4xl mx-auto">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">De las top 10 empresas en instalación de placas solares en Puerto Rico</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">De las top 10 empresas recomendadas en instalación de placas solares en Puerto Rico</h3>
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">500+</div>
+                  <div className="text-3xl font-bold text-gray-900 mb-1">300+</div>
                   <div className="text-gray-700 text-sm">Familias boricuas</div>
                 </div>
                 <div className="text-center">
