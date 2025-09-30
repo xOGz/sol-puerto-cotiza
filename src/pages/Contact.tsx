@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -10,6 +9,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  nombre: z.string().trim().min(1, "El nombre es requerido").max(100, "El nombre debe tener menos de 100 caracteres"),
+  email: z.string().trim().email("Correo electrónico inválido").max(255, "El correo debe tener menos de 255 caracteres"),
+  telefono: z.string().trim().max(20, "El teléfono debe tener menos de 20 caracteres").optional(),
+  municipio: z.string().trim().max(100, "El municipio debe tener menos de 100 caracteres").optional(),
+  asunto: z.string().trim().max(200, "El asunto debe tener menos de 200 caracteres").optional(),
+  mensaje: z.string().trim().min(1, "El mensaje es requerido").max(1000, "El mensaje debe tener menos de 1000 caracteres"),
+});
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,10 +44,30 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log("Contact form submitted:", formData);
-      
+      // Validate form data
+      const validatedData = contactSchema.parse({
+        nombre: formData.nombre,
+        email: formData.email,
+        telefono: formData.telefono || undefined,
+        municipio: formData.municipio || undefined,
+        asunto: formData.asunto || undefined,
+        mensaje: formData.mensaje,
+      });
+
+      // Insert into database
+      const { error } = await supabase
+        .from('contactos')
+        .insert([{
+          nombre: validatedData.nombre,
+          email: validatedData.email,
+          telefono: validatedData.telefono || null,
+          municipio: validatedData.municipio || null,
+          asunto: validatedData.asunto || null,
+          mensaje: validatedData.mensaje,
+        }]);
+
+      if (error) throw error;
+
       toast({
         title: "¡Mensaje enviado!",
         description: "Nos pondremos en contacto contigo pronto.",
@@ -53,11 +83,19 @@ const Contact = () => {
       });
 
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Hubo un problema al enviar tu mensaje. Intenta de nuevo.",
-        variant: "destructive",
-      });
+      if (error instanceof z.ZodError) {
+        toast({
+          title: "Error de validación",
+          description: error.errors[0].message,
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Error",
+          description: "Hubo un problema al enviar tu mensaje. Intenta de nuevo.",
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
