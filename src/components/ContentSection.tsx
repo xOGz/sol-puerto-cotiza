@@ -118,47 +118,6 @@ const ContentSection = () => {
             </div>
           </section>
 
-          {/* Cost and Financing Section */}
-          <section className="mb-16 bg-gradient-to-r from-kilowatt-primary/10 to-kilowatt-secondary/10 p-8 rounded-3xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Costos y Financiamiento de Placas Solares en Puerto Rico
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-lg font-bold text-gray-900 mb-4">Rangos de Precio por Tamaño de Sistema</h4>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex justify-between">
-                    <span>Sistema 5kW (casa pequeña):</span>
-                    <span className="font-semibold">$15,000 - $20,000</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Sistema 8kW (casa mediana):</span>
-                    <span className="font-semibold">$22,000 - $28,000</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Sistema 12kW (casa grande):</span>
-                    <span className="font-semibold">$30,000 - $38,000</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Batería Tesla Powerwall:</span>
-                    <span className="font-semibold">+$12,000 - $15,000</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="text-lg font-bold text-gray-900 mb-4">Opciones de Financiamiento</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Pago en efectivo:</strong> Máximo ahorro, ROI en 5-6 años</li>
-                  <li>• <strong>Préstamos solares:</strong> 0% interés primeros 18 meses</li>
-                  <li>• <strong>PACE Financing:</strong> Pago a través de CRIM por 20 años</li>
-                  <li>• <strong>Power Purchase Agreement (PPA):</strong> $0 de pago inicial</li>
-                  <li>• <strong>Crédito federal:</strong> 30% del costo total hasta 2032</li>
-                </ul>
-              </div>
-            </div>
-          </section>
 
           {/* Maintenance Section */}
           <section className="mb-16">
