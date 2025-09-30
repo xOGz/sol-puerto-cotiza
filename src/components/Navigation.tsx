@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import kilowattLogo from "@/assets/kilowatt-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +48,7 @@ const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/5b0623ea-279b-46df-9400-bd9f8f9d5fff.png" 
+                src={kilowattLogo} 
                 alt="Kilowatt PR LLC Logo - Placas Solares Puerto Rico" 
                 className="w-14 h-14 object-contain"
               />

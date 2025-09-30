@@ -7,6 +7,7 @@ import womanLaptop from "@/assets/testimonials/woman-laptop.jpg";
 import womanWhiteShirt from "@/assets/testimonials/woman-white-shirt.jpg";
 import manCheckeredShirt from "@/assets/testimonials/man-checkered-shirt.jpg";
 import peopleLaptops from "@/assets/testimonials/people-laptops.jpg";
+import promoGarantizado from "@/assets/promo-garantizado.png";
 
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -68,6 +69,15 @@ const TestimonialsSection = () => {
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Estos son algunos de nuestros clientes satisfechos en toda la isla
           </p>
+        </div>
+
+        {/* Promotional Image Section */}
+        <div className="flex justify-center mb-12 animate-fade-in-up">
+          <img 
+            src={promoGarantizado} 
+            alt="100% Garantizado - Kilowatt PR LLC" 
+            className="max-w-md w-full h-auto rounded-2xl shadow-lg"
+          />
         </div>
 
         <div className="relative max-w-4xl mx-auto">

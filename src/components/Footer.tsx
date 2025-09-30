@@ -1,6 +1,7 @@
 
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
+import kilowattLogo from "@/assets/kilowatt-logo.png";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/35a5cb3f-1dc6-4637-a191-795956768438.png" 
+                src={kilowattLogo} 
                 alt="Kilowatt PR Logo" 
                 className="w-10 h-10 object-contain"
               />
