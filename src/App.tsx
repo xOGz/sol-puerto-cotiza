@@ -36,6 +36,11 @@ import Isabela from "./pages/Isabela";
 import Yauco from "./pages/Yauco";
 import Guayama from "./pages/Guayama";
 
+// Hub pages
+import Servicios from "./pages/Servicios";
+import PuertoRico from "./pages/PuertoRico";
+import MapaDelSitio from "./pages/MapaDelSitio";
+
 // Service pages
 import InstalacionComercial from "./pages/servicios/InstalacionComercial";
 import InstalacionResidencial from "./pages/servicios/InstalacionResidencial";
@@ -71,46 +76,55 @@ const App = () => (
         <Route path="/mantenimiento-paneles-solares" element={<MantenimientoSolar />} />
         <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
         
+        {/* Hub Pages */}
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/puerto-rico" element={<PuertoRico />} />
+        <Route path="/mapa-del-sitio" element={<MapaDelSitio />} />
+        
         {/* City Pages */}
+        <Route path="/san-juan" element={<SanJuan />} />
+        <Route path="/aguada" element={<Mayaguez />} />
         <Route path="/paneles-solares-san-juan" element={<SanJuan />} />
+        <Route path="/bayamon" element={<Bayamon />} />
         <Route path="/paneles-solares-bayamon" element={<Bayamon />} />
-        <Route path="/paneles-solares-carolina" element={<Carolina />} />
-        <Route path="/paneles-solares-ponce" element={<Ponce />} />
-        <Route path="/paneles-solares-caguas" element={<Caguas />} />
-        <Route path="/paneles-solares-guaynabo" element={<Guaynabo />} />
-        <Route path="/paneles-solares-arecibo" element={<Arecibo />} />
-        <Route path="/paneles-solares-toa-baja" element={<ToaBaja />} />
-        <Route path="/paneles-solares-trujillo-alto" element={<TrujilloAlto />} />
-        <Route path="/paneles-solares-cayey" element={<Cayey />} />
-        <Route path="/paneles-solares-vega-baja" element={<VegaBaja />} />
-        <Route path="/paneles-solares-humacao" element={<Humacao />} />
-        <Route path="/paneles-solares-fajardo" element={<Fajardo />} />
-        <Route path="/paneles-solares-manati" element={<Manati />} />
-        <Route path="/paneles-solares-dorado" element={<Dorado />} />
-        <Route path="/paneles-solares-isabela" element={<Isabela />} />
-        <Route path="/paneles-solares-yauco" element={<Yauco />} />
-        <Route path="/paneles-solares-guayama" element={<Guayama />} />
-        <Route path="/perito-electricista-mayaguez" element={<Mayaguez />} />
-        <Route path="/paneles-solares-aguadilla" element={<Aguadilla />} />
+        <Route path="/carolina" element={<Carolina />} />
+        <Route path="/ponce" element={<Ponce />} />
+        <Route path="/caguas" element={<Caguas />} />
+        <Route path="/guaynabo" element={<Guaynabo />} />
+        <Route path="/arecibo" element={<Arecibo />} />
+        <Route path="/toa-baja" element={<ToaBaja />} />
+        <Route path="/trujillo-alto" element={<TrujilloAlto />} />
+        <Route path="/cayey" element={<Cayey />} />
+        <Route path="/vega-baja" element={<VegaBaja />} />
+        <Route path="/humacao" element={<Humacao />} />
+        <Route path="/fajardo" element={<Fajardo />} />
+        <Route path="/manati" element={<Manati />} />
+        <Route path="/dorado" element={<Dorado />} />
+        <Route path="/isabela" element={<Isabela />} />
+        <Route path="/yauco" element={<Yauco />} />
+        <Route path="/guayama" element={<Guayama />} />
+        <Route path="/mayaguez" element={<Mayaguez />} />
+        <Route path="/aguadilla" element={<Aguadilla />} />
         
         {/* Service Pages */}
-        <Route path="/servicios/instalacion-comercial" element={<InstalacionComercial />} />
-        <Route path="/servicios/instalacion-residencial" element={<InstalacionResidencial />} />
-        <Route path="/servicios/baterias-lfp" element={<BateriasLFP />} />
-        <Route path="/servicios/backup-hibrido" element={<BackupHibrido />} />
-        <Route path="/servicios/limpieza-placas" element={<LimpiezaPlacas />} />
+        <Route path="/servicios/instalacion-placas-solares-comercial" element={<InstalacionComercial />} />
+        <Route path="/servicios/instalacion-placas-solares-residencial" element={<InstalacionResidencial />} />
+        <Route path="/servicios/baterias-almacenamiento-lfp" element={<BateriasLFP />} />
+        <Route path="/servicios/backup-solar-hibrido" element={<BackupHibrido />} />
+        <Route path="/servicios/limpieza-de-placas" element={<LimpiezaPlacas />} />
         <Route path="/servicios/actualizacion-ampliacion" element={<ActualizacionAmpliacion />} />
         <Route path="/servicios/net-metering-luma" element={<NetMeteringLuma />} />
-        <Route path="/servicios/solar-off-grid" element={<SolarOffGrid />} />
+        <Route path="/servicios/sistema-solar-off-grid" element={<SolarOffGrid />} />
         <Route path="/servicios/microinversores-enphase" element={<MicroinversoresEnphase />} />
         <Route path="/servicios/permisos-financiamiento" element={<PermisosFinanciamiento />} />
-        <Route path="/servicios/sol-ark-hibrido" element={<SolArkHibrido />} />
-        <Route path="/servicios/eg4-hibrido-boss-18" element={<EG4HibridoBoss18 />} />
+        <Route path="/servicios/solark-hibrido" element={<SolArkHibrido />} />
+        <Route path="/servicios/eg4-hibrido-boss18" element={<EG4HibridoBoss18 />} />
         <Route path="/servicios/tesla-powerwall" element={<TeslaPowerwall />} />
         <Route path="/servicios/ev-charger-con-solar" element={<EVChargerConSolar />} />
-        <Route path="/servicios/estructuras-suelo-uni-rack" element={<EstructurasSueloUniRack />} />
+        <Route path="/servicios/estructuras-suelo-unirac" element={<EstructurasSueloUniRack />} />
         <Route path="/servicios/inspeccion-sistema" element={<InspeccionSistema />} />
         <Route path="/servicios/reparacion-inversores" element={<ReparacionInversores />} />
+        <Route path="/servicios/mantenimiento-solar" element={<MantenimientoSolar />} />
         
         <Route path="*" element={<NotFound />} />
       </Routes>

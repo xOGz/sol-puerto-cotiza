@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
@@ -35,26 +35,43 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Servicios */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Servicios</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Instalación residencial</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sistemas con batería</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Monitoreo solar</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Mantenimiento</a></li>
+              <li><Link to="/servicios" className="text-gray-400 hover:text-white transition-colors font-medium">Ver todos</Link></li>
+              <li><Link to="/servicios/instalacion-placas-solares-residencial" className="text-gray-400 hover:text-white transition-colors">Instalación residencial</Link></li>
+              <li><Link to="/servicios/instalacion-placas-solares-comercial" className="text-gray-400 hover:text-white transition-colors">Instalación comercial</Link></li>
+              <li><Link to="/servicios/baterias-almacenamiento-lfp" className="text-gray-400 hover:text-white transition-colors">Baterías LFP</Link></li>
+              <li><Link to="/servicios/mantenimiento-solar" className="text-gray-400 hover:text-white transition-colors">Mantenimiento</Link></li>
+              <li><Link to="/servicios/limpieza-de-placas" className="text-gray-400 hover:text-white transition-colors">Limpieza de placas</Link></li>
+              <li><Link to="/servicios/net-metering-luma" className="text-gray-400 hover:text-white transition-colors">Net Metering</Link></li>
             </ul>
           </div>
 
-          {/* Links */}
+          {/* Ciudades */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Ciudades</h3>
+            <ul className="space-y-3">
+              <li><Link to="/puerto-rico" className="text-gray-400 hover:text-white transition-colors font-medium">Ver todas</Link></li>
+              <li><Link to="/aguada" className="text-gray-400 hover:text-white transition-colors">Aguada</Link></li>
+              <li><Link to="/aguadilla" className="text-gray-400 hover:text-white transition-colors">Aguadilla</Link></li>
+              <li><Link to="/san-juan" className="text-gray-400 hover:text-white transition-colors">San Juan</Link></li>
+              <li><Link to="/bayamon" className="text-gray-400 hover:text-white transition-colors">Bayamón</Link></li>
+              <li><Link to="/ponce" className="text-gray-400 hover:text-white transition-colors">Ponce</Link></li>
+              <li><Link to="/mayaguez" className="text-gray-400 hover:text-white transition-colors">Mayagüez</Link></li>
+            </ul>
+          </div>
+
+          {/* Enlaces */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Enlaces</h3>
             <ul className="space-y-3">
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">Sobre nosotros</Link></li>
               <li><Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+              <li><Link to="/preguntas-frecuentes" className="text-gray-400 hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contacto</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Política de privacidad</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Términos de servicio</a></li>
+              <li><Link to="/mapa-del-sitio" className="text-gray-400 hover:text-white transition-colors">Mapa del sitio</Link></li>
             </ul>
           </div>
 

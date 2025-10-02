@@ -12,6 +12,8 @@ import PricingSection from "@/components/PricingSection";
 
 import InternalLinking from "@/components/InternalLinking";
 import LeadCaptureSection from "@/components/LeadCaptureSection";
+import ServicesGrid from "@/components/ServicesGrid";
+import CitiesGrid from "@/components/CitiesGrid";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
@@ -47,6 +49,8 @@ const Index = () => {
         <ContentSection />
         <CompanyMission />
         
+        <ServicesGrid />
+        <CitiesGrid />
         <InternalLinking />
         <LeadCaptureSection />
       </main>
