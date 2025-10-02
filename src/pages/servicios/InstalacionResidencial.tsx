@@ -130,10 +130,6 @@ const InstalacionResidencial = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-kilowatt-primary flex-shrink-0 mt-0.5" />
-                        <span>Crédito federal 30% ITC reduce costo neto</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-kilowatt-primary flex-shrink-0 mt-0.5" />
                         <span>Financiamiento $0 inicial disponible</span>
                       </li>
                     </ul>
