@@ -126,7 +126,7 @@ const InstalacionResidencial = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-kilowatt-primary flex-shrink-0 mt-0.5" />
-                        <span>Sistema 8-12 kW (casa grande): $20,000-$30,000</span>
+                        <span>Sistema 8-12 kW (casa grande): $16,000 - $22,000</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-kilowatt-primary flex-shrink-0 mt-0.5" />
