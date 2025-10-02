@@ -2,7 +2,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import GoogleReviews from "@/components/GoogleReviews";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FeatureGrid from "@/components/FeatureGrid";
 import ContentSection from "@/components/ContentSection";
@@ -40,7 +39,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <TestimonialsSection />
-        <GoogleReviews />
         <HowItWorksSection />
         <PricingSection />
         <FeatureGrid />
