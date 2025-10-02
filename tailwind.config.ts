@@ -20,6 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				'manrope': ['Manrope', 'Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
