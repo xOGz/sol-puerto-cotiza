@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, CheckCircle, Clock, Users, Award } from "lucide-react";
-import VideoModal from "@/components/VideoModal";
+import { Phone } from "lucide-react";
+
 const HeroSection = () => {
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-  const scrollToQuote = () => {
+  const scrollToContact = () => {
     const element = document.querySelector('#cotizacion');
     if (element) {
       element.scrollIntoView({
@@ -12,97 +10,85 @@ const HeroSection = () => {
       });
     }
   };
-  return <>
-      <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-white pt-20">
-        {/* Background Image with Dark Overlay */}
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url('/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png')`
-        }} />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
-        </div>
 
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="max-w-5xl mx-auto animate-fade-in-up">
-            
-            {/* Main Headline - SEO Optimized H1 */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              <span className="block">Peritos Electricistas </span>
-              <span className="block">Especialistas en Energía Solar</span>
-              <span className="block bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary bg-clip-text text-transparent">Puerto Rico</span>
-            </h1>
+  return (
+    <section 
+      id="inicio" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      aria-label="Hero section - Kilowatt PR Solar Energy"
+    >
+      {/* Background Image with Dark Overlay for Better Contrast */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/lovable-uploads/36135bc9-cdde-43b3-83e0-846ebd47fff6.png"
+          alt="Instalación profesional de paneles solares en Puerto Rico"
+          className="w-full h-full object-cover object-center"
+          fetchPriority="high"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/55"></div>
+      </div>
 
-            {/* Subheadline - Long tail keywords */}
-            <h2 className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-              Instalación profesional de <strong>placas solares y baterías lítio</strong> en toda la isla. 
-              <span className="block mt-2 font-bold text-kilowatt-primary">Cotización 100% gratis en menos de 24 horas</span>
-            </h2>
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="max-w-4xl mx-auto animate-fade-in-up">
+          
+          {/* Eyebrow */}
+          <p className="font-manrope font-bold text-sm md:text-base uppercase tracking-[0.15em] text-kilowatt-primary mb-4">
+            Peritos electricistas certificados
+          </p>
 
-            {/* Main CTA */}
-            <div className="mb-12">
-              <Button onClick={scrollToQuote} size="lg" className="bg-gradient-to-r from-kilowatt-primary to-kilowatt-secondary hover:from-kilowatt-primary/90 hover:to-kilowatt-secondary/90 text-white px-12 py-6 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-glow">
-                🔥 Solicita Cotización Gratis
-              </Button>
-              <p className="text-sm text-white/90 mt-2">✓ Sin compromiso ✓ Respuesta garantizada en 24hrs ✓ Expertos locales</p>
-              <p className="text-xs text-white/80 mt-1">⚡ Ahorra hasta $200/mes en tu factura de luz</p>
-            </div>
+          {/* H1 - Only H1 on the page */}
+          <h1 className="font-manrope font-extrabold text-white mb-6 leading-tight" style={{
+            fontSize: 'clamp(2rem, 5vw, 4rem)',
+            letterSpacing: '0.2px',
+            maxWidth: '900px',
+            margin: '0 auto 1.5rem'
+          }}>
+            Energía solar y baterías en Puerto Rico
+          </h1>
 
-            {/* Value Props Icons - SEO Enhanced */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <Award className="w-8 h-8 text-kilowatt-primary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Certificaciones Con Luma</div>
-                <div className="text-gray-700 text-sm">Perito Electricistas</div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <CheckCircle className="w-8 h-8 text-kilowatt-secondary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Instalación De Sistemas Solares</div>
-                <div className="text-gray-700 text-sm">Profesional</div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <Users className="w-8 h-8 text-kilowatt-primary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Lavado + Sellado De Techo</div>
-                <div className="text-gray-700 text-sm">Tratamiento Exclusivo</div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-                <CheckCircle className="w-8 h-8 text-kilowatt-secondary mx-auto mb-3" />
-                <div className="text-lg font-bold text-gray-900 mb-1">Limpieza de Placas Solares</div>
-                <div className="text-gray-700 text-sm">Toda La Isla</div>
-              </div>
-            </div>
+          {/* Support Paragraph */}
+          <p className="font-manrope font-medium text-lg md:text-xl text-white/95 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Diseño, instalación y servicio técnico de placas solares y sistemas de almacenamiento. Cumplimos NEC y procesos de LUMA. Atendemos toda la isla.
+          </p>
 
-            {/* Trust Indicators - Local SEO */}
-            <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 max-w-4xl mx-auto">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">De las top 10 empresas recomendadas en instalación de placas solares en Puerto Rico</h3>
-              <div className="grid grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">300+</div>
-                  <div className="text-gray-700 text-sm">Familias boricuas</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">15+</div>
-                  <div className="text-gray-700 text-sm">Años experiencia</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">$189</div>
-                  <div className="text-gray-700 text-sm">Ahorro mensual promedio</div>
-                </div>
-              </div>
-            </div>
+          {/* CTA Section */}
+          <div className="mb-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button 
+              onClick={scrollToContact}
+              size="lg"
+              className="font-manrope font-semibold bg-kilowatt-primary hover:bg-kilowatt-primary/90 text-white px-10 py-6 rounded-lg text-base transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kilowatt-primary"
+            >
+              Solicitar evaluación
+            </Button>
+            <a 
+              href="tel:+17874312275"
+              className="font-manrope font-medium text-white/95 hover:text-white text-base transition-colors duration-200 flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded px-2 py-1"
+            >
+              o llámanos al (787) 431-2275
+            </a>
+          </div>
+
+          {/* Trust Bar */}
+          <div className="font-manrope font-semibold text-sm text-white/90 flex flex-wrap items-center justify-center gap-3 md:gap-6">
+            <span className="whitespace-nowrap">Respuesta en 24 h</span>
+            <span className="hidden md:inline text-white/60">·</span>
+            <span className="whitespace-nowrap">Garantías de fabricante</span>
+            <span className="hidden md:inline text-white/60">·</span>
+            <span className="whitespace-nowrap">Trabajo en toda la isla</span>
           </div>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/80 rounded-full mt-2 animate-pulse"></div>
-          </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white/80 rounded-full mt-2 animate-pulse"></div>
         </div>
-      </section>
-
-      {/* Video Modal */}
-      <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
-    </>;
+      </div>
+    </section>
+  );
 };
+
 export default HeroSection;
