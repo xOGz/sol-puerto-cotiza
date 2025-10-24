@@ -38,24 +38,7 @@ const TrustSection = () => {
           </p>
         </div>
 
-        {/* Trust Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mb-16 max-w-4xl mx-auto">
-          <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <Users className="w-8 h-8 text-solar-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-gray-900 mb-1">500+</div>
-            <div className="text-gray-600 text-sm">Familias servidas</div>
-          </div>
-          <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <Star className="w-8 h-8 text-solar-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-gray-900 mb-1">4.9</div>
-            <div className="text-gray-600 text-sm">Rating promedio</div>
-          </div>
-          <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
-            <Award className="w-8 h-8 text-solar-500 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-gray-900 mb-1">0</div>
-            <div className="text-gray-600 text-sm">Reclamos en Daco</div>
-          </div>
-        </div>
+
 
         {/* Certifications */}
         <div className="mb-12">
