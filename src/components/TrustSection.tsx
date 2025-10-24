@@ -39,7 +39,7 @@ const TrustSection = () => {
         </div>
 
         {/* Trust Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div className="flex flex-wrap justify-center gap-8 mb-16 max-w-4xl mx-auto">
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
             <Users className="w-8 h-8 text-solar-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-gray-900 mb-1">500+</div>
