@@ -53,7 +53,7 @@ const TrustSection = () => {
           <div className="text-center glass p-6 rounded-2xl animate-fade-in-up">
             <Award className="w-8 h-8 text-solar-500 mx-auto mb-3" />
             <div className="text-2xl font-bold text-gray-900 mb-1">0</div>
-            <div className="text-gray-600 text-sm">Reclamos garantía</div>
+            <div className="text-gray-600 text-sm">Reclamos en Daco</div>
           </div>
         </div>
 
