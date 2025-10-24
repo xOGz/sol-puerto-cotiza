@@ -4,7 +4,7 @@ import { Shield, Award, Users, Star } from "lucide-react";
 // Import logos
 import lumaLogo from "@/assets/logos/luma-energy-logo.svg";
 import necLogo from "@/assets/logos/nec-logo.png";
-import bbbLogo from "@/assets/logos/bbb-generated.png";
+import bbbLogo from "@/assets/logos/bbb-accredited.png";
 import hudLogo from "@/assets/logos/hud-logo.png";
 import elNuevoDiaLogo from "@/assets/logos/el-nuevo-dia-logo.svg";
 import telemundoLogo from "@/assets/logos/telemundo-original-logo.svg";
